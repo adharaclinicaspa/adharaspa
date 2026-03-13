@@ -1,26 +1,153 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-brand-bg: #050505;
+  --color-brand-surface: #111111;
+  --color-brand-surface-light: #1A1A1A;
+  --color-brand-gold-text: #D4AF37;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A0A0;
+  --color-text-muted: #666666;
+
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-gold: rgba(212, 175, 55, 0.3);
+
+  /* Gold Gradient strictly for accents/buttons */
+  --color-gold-gradient: linear-gradient(135deg, #F3D078 0%, #D4AF37 50%, #A67C00 100%);
+  --color-glass-bg: rgba(17, 17, 17, 0.6);
+
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  --shadow-gold-glow: 0 0 20px rgba(212, 175, 55, 0.15);
+  
+  --animate-fade-in: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-pulse-gold: pulseGold 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 30s linear infinite;
+
+  --gold-gradient-1: #BF953F;
+  --gold-gradient-2: #FCF6BA;
+  --gold-gradient-3: #B38728;
+  --gold-gradient-4: #FBF5B7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --brand-bg: #050505;
+    --brand-surface: #111111;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
+    --gold-primary: #D4AF37;
+  }
+
+  body {
+    background-color: var(--brand-bg);
+    color: var(--text-primary);
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F3D078 0%, #D4AF37 50%, #A67C00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gold-gradient-light {
+    background: linear-gradient(135deg, #FFF1CD 0%, #E8C15A 50%, #C39614 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-panel {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .glass-pill {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 9999px;
+  }
+
+  .btn-gold {
+    background: linear-gradient(135deg, #F3D078 0%, #D4AF37 50%, #A67C00 100%);
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+  }
+
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+  }
+
+  .btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .radial-glow-gold {
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  }
+
+  .bg-gold-shimmer {
+    background: linear-gradient(
+      -45deg,
+      var(--gold-gradient-1),
+      var(--gold-gradient-2),
+      var(--gold-gradient-3),
+      var(--gold-gradient-4)
+    );
+    background-size: 300% 300%;
+    animation: goldShimmer 6s ease infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes goldShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hide scrollbar for marquee */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
