@@ -7,9 +7,8 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { label: "Inicio", href: "/" },
   { label: "Tratamientos", href: "/tratamientos" },
-  { label: "Paquetes", href: "/paquetes" },
   { label: "Resultados", href: "/#resultados" },
-  { label: "Experiencia", href: "/#paquetes-preview" },
+  { label: "Experiencia", href: "/tratamientos#paquetes" },
   { label: "FAQ", href: "/#faq" },
 ];
 
@@ -97,8 +96,8 @@ export default function Navigation() {
             </a>
           ))}
           <a 
-            href="#contacto" 
-            className="w-full text-center px-6 py-3 rounded-full btn-gold text-sm mt-4" 
+            href="#reservar" 
+            className="w-full text-center px-6 py-3 rounded-full btn-gold text-sm mt-4 text-black font-semibold" 
             onClick={() => setMenuOpen(false)}
           >
             Agendar Valoración

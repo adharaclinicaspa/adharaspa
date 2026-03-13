@@ -77,8 +77,17 @@ export default function HeroSection() {
               className="object-cover opacity-60 mix-blend-luminosity"
               priority
            />
-           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 glass-pill px-4 py-2 bg-black/50 text-white text-xs tracking-widest uppercase font-medium">
-              Lindavista, CDMX
+           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 glass-pill px-6 py-3 bg-black/50 text-white text-xs tracking-widest uppercase font-medium flex items-center gap-3 backdrop-blur-md border-white/10 whitespace-nowrap">
+              <span>Clínica Spa con sede en Lindavista, CDMX</span>
+              <div className="w-px h-3 bg-white/20" />
+              <a 
+                href="https://maps.app.goo.gl/uXv7uXN9v5yvS6Y9A" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--color-brand-gold-text)] hover:underline font-bold"
+              >
+                Ver ubicación
+              </a>
            </div>
         </BlurReveal>
 

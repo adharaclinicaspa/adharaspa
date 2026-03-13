@@ -82,7 +82,7 @@ export default function TratamientosPage() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-24">
+          <div className="flex flex-col gap-24 mb-32">
             {servicios.map((servicio, index) => {
               const Icon = servicio.icono;
               const isEven = index % 2 === 0;
@@ -123,13 +123,85 @@ export default function TratamientosPage() {
                     </ul>
 
                     <a href="/#reservar" className="btn-outline px-8 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                      Agendar Cita
+                      Agendar Valoración
                     </a>
                   </div>
 
                 </div>
               );
             })}
+          </div>
+
+          {/* Seccion de Paquetes Integrada */}
+          <div className="pt-24 border-t border-white/10" id="paquetes">
+            <div className="text-center mb-16">
+              <span className="inline-block mb-3 text-[var(--color-brand-gold-text)] font-semibold tracking-wider text-sm uppercase">
+                Resultados que evolucionan contigo
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
+                Paquetes Exclusivos Adhara
+              </h2>
+              <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
+                Diseñados para potenciar resultados de forma progresiva, segura y personalizada.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+              {/* Experiencias Faciales */}
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                  <Sparkles className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Experiencias Faciales</h3>
+                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                  Rituales personalizados enfocados en rejuvenecimiento, control de acné, 
+                  despigmentación, efecto glow y bioestimulación avanzada (Dermapen).
+                </p>
+                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Programa de 3 o 6 sesiones</p>
+                  <p className="text-white text-3xl font-bold mb-2">desde $2,999 MXN</p>
+                  <p className="text-neutral-500 text-sm">Ideal para quienes buscan luminosidad inmediata o transformación profunda de la piel.</p>
+                </div>
+                <a href="/#reservar" className="btn-gold inline-flex w-full justify-center px-6 py-4 rounded-full text-black font-semibold text-sm">
+                  Agendar Valoración
+                </a>
+              </div>
+
+              {/* Protocolos Corporales */}
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
+                <div className="absolute top-0 right-0 glass-pill px-4 py-1.5 text-xs font-semibold bg-[var(--color-brand-gold-text)] text-black rounded-bl-3xl">
+                  MÁS POPULAR
+                </div>
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                  <Droplet className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Protocolos Corporales</h3>
+                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                  Tecnología estética de última generación para moldear, reafirmar y 
+                  mejorar la textura de la piel. Una experiencia de evolución y cuidado.
+                </p>
+                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Planes a Medida</p>
+                  <p className="text-neutral-400 text-sm mb-4">Diseñamos el protocolo ideal después de tu valoración inicial sin costo.</p>
+                  <ul className="text-neutral-300 space-y-2 text-sm">
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Moldéo corporal avanzado</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Firmeza y tonificación</li>
+                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Mejora de textura (celulitis)</li>
+                  </ul>
+                </div>
+                <a href="/#reservar" className="btn-outline border-[var(--color-brand-gold-text)] text-[var(--color-brand-gold-text)] inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
+                  Agendar Valoración
+                </a>
+              </div>
+            </div>
+
+            <div className="glass-panel p-10 md:p-16 rounded-3xl text-center bg-gradient-to-b from-neutral-900 to-black border border-white/10">
+              <h3 className="text-2xl font-bold text-white mb-6">¿Por qué elegir nuestros programas?</h3>
+              <p className="text-xl text-neutral-300 italic max-w-2xl mx-auto leading-relaxed">
+                "Inversión deliberada en tu confianza. Cada sesión potencia la anterior. 
+                En Adhara Clínica Spa, trabajamos para ver resultados reales que evolucionan contigo."
+              </p>
+            </div>
           </div>
 
         </div>
@@ -139,3 +211,4 @@ export default function TratamientosPage() {
     </>
   );
 }
+

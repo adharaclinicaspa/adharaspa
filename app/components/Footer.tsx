@@ -29,9 +29,9 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-2">
             <h4 className="text-white font-semibold mb-6">Explora</h4>
             <ul className="flex flex-col gap-4">
-              <li><Link href="/paquetes" className="text-neutral-400 hover:text-white text-sm transition-colors">Paquetes Exclusivos</Link></li>
+              <li><Link href="/tratamientos" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Tratamientos</Link></li>
               <li><Link href="/#resultados" className="text-neutral-400 hover:text-white text-sm transition-colors">Resultados</Link></li>
-              <li><Link href="/#paquetes-preview" className="text-neutral-400 hover:text-white text-sm transition-colors">Experiencia Adhara</Link></li>
+              <li><Link href="/tratamientos#paquetes" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Experiencia Adhara</Link></li>
               <li><Link href="/nosotros" className="text-neutral-400 hover:text-white text-sm transition-colors">Nosotros</Link></li>
             </ul>
           </div>

@@ -56,16 +56,16 @@ export default function BookingSection() {
             <BlurReveal delay={0.3} className="w-full max-w-md">
               <div className="glass-panel p-2 rounded-3xl border border-white/10 bg-black/60 shadow-2xl relative">
                  {/* Setmore iFrame */}
-                 <div className="w-full bg-white rounded-2xl overflow-hidden" style={{ minHeight: "650px" }}>
+                 <div className="w-full bg-white rounded-3xl overflow-hidden shadow-2xl min-h-[800px] h-[800px] relative">
                     <iframe 
                       src="https://adharaclinicaspa.setmore.com" 
+                      scrolling="yes" 
                       width="100%" 
-                      height="650" 
-                      frameBorder="0" 
-                      scrolling="yes"
+                      height="100%" 
+                      frameBorder="0"
                       title="Setmore Booking Calendar"
-                      className="w-full h-full"
-                    />
+                      className="absolute inset-0 w-full h-full"
+                    ></iframe>
                  </div>
               </div>
             </BlurReveal>

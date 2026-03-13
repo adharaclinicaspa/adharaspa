@@ -36,9 +36,9 @@ export default function PaquetesSection() {
                 Rituales personalizados enfocados en rejuvenecimiento, control de acné, 
                 despigmentación, efecto glow y bioestimulación avanzada.
               </p>
-              <a href="/paquetes" className="btn-outline px-6 py-3 rounded-full text-white font-semibold text-sm w-full">
-                Ver Opciones Faciales
-              </a>
+                <a href="/tratamientos#paquetes" className="btn-outline px-6 py-3 rounded-full text-white font-semibold text-sm w-full flex justify-center">
+                  Ver Opciones Faciales
+                </a>
             </div>
           </BlurReveal>
 
@@ -56,7 +56,7 @@ export default function PaquetesSection() {
                 Tecnología estética de última generación para moldear, reafirmar y 
                 mejorar la textura de la piel. Planes diseñados a medida.
               </p>
-              <a href="/paquetes" className="btn-gold px-6 py-3 rounded-full text-black font-semibold text-sm w-full">
+              <a href="/tratamientos#paquetes" className="btn-gold px-6 py-3 rounded-full text-black font-semibold text-sm w-full flex justify-center">
                 Ver Opciones Corporales
               </a>
             </div>
@@ -64,8 +64,8 @@ export default function PaquetesSection() {
         </div>
 
         <BlurReveal delay={0.5} className="flex justify-center mt-12">
-           <a href="/paquetes" className="text-neutral-400 hover:text-white transition-colors uppercase tracking-widest text-sm font-semibold flex items-center gap-2">
-             Conocer todos los paquetes →
+           <a href="/tratamientos" className="text-neutral-400 hover:text-white transition-colors uppercase tracking-widest text-sm font-semibold flex items-center gap-2">
+             Conocer todos los servicios →
            </a>
         </BlurReveal>
 

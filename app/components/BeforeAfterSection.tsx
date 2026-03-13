@@ -53,7 +53,7 @@ export default function BeforeAfterSection() {
 
             <BlurReveal delay={0.8}>
               <a
-                href="#contacto"
+                href="#reservar"
                 className="group flex items-center justify-between w-full sm:w-auto gap-12 glass-panel hover:bg-white/10 transition-colors border border-white/20 px-6 py-4 rounded-2xl"
               >
                 <div className="flex flex-col">
