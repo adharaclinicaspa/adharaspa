@@ -36,10 +36,10 @@ export default function HeroSection() {
         {/* Main Headline */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-bold tracking-tight text-white leading-[1.05] mb-8">
           <BlurReveal delay={0.2}>
-            Regálate el cuidado que
+            El cuidado que
           </BlurReveal>
           <BlurReveal delay={0.3}>
-            tu piel merece<span className="text-[var(--color-brand-gold-text)]">.</span>
+            mereces<span className="text-[var(--color-brand-gold-text)]">.</span>
           </BlurReveal>
         </h1>
 
