@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li><Link href="/tratamientos" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Tratamientos</Link></li>
               <li><Link href="/#resultados" className="text-neutral-400 hover:text-white text-sm transition-colors">Resultados</Link></li>
-              <li><Link href="/tratamientos#paquetes" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Experiencia Adhara</Link></li>
+              <li><Link href="/experiencia" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Experiencia Adhara</Link></li>
               <li><Link href="/nosotros" className="text-neutral-400 hover:text-white text-sm transition-colors">Nosotros</Link></li>
             </ul>
           </div>

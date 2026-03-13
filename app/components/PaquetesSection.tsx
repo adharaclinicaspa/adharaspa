@@ -56,18 +56,18 @@ export default function PaquetesSection() {
                 Tecnología estética de última generación para moldear, reafirmar y 
                 mejorar la textura de la piel. Planes diseñados a medida.
               </p>
-              <a href="/tratamientos#paquetes" className="btn-gold px-6 py-3 rounded-full text-black font-semibold text-sm w-full flex justify-center">
-                Ver Opciones Corporales
-              </a>
-            </div>
+                <a href="/experiencia" className="btn-gold px-6 py-3 rounded-full text-black font-semibold text-sm w-full flex justify-center">
+                  Descubre la Experiencia
+                </a>
+              </div>
+            </BlurReveal>
+          </div>
+  
+          <BlurReveal delay={0.5} className="flex justify-center mt-12">
+             <a href="/experiencia" className="text-neutral-400 hover:text-white transition-colors uppercase tracking-widest text-sm font-semibold flex items-center gap-2">
+               ¿Por qué elegir Adhara? →
+             </a>
           </BlurReveal>
-        </div>
-
-        <BlurReveal delay={0.5} className="flex justify-center mt-12">
-           <a href="/tratamientos" className="text-neutral-400 hover:text-white transition-colors uppercase tracking-widest text-sm font-semibold flex items-center gap-2">
-             Conocer todos los servicios →
-           </a>
-        </BlurReveal>
 
       </div>
     </section>

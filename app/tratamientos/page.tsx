@@ -139,7 +139,7 @@ export default function TratamientosPage() {
                 Resultados que evolucionan contigo
               </span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-                Paquetes Exclusivos Adhara
+                Paquetes Exclusivos <span className="text-[var(--color-brand-gold-text)]" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>
               </h2>
               <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
                 Diseñados para potenciar resultados de forma progresiva, segura y personalizada.
@@ -169,7 +169,7 @@ export default function TratamientosPage() {
 
               {/* Protocolos Corporales */}
               <div className="glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
-                <div className="absolute top-0 right-0 glass-pill px-4 py-1.5 text-xs font-semibold bg-[var(--color-brand-gold-text)] text-black rounded-bl-3xl">
+                <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg">
                   MÁS POPULAR
                 </div>
                 <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
@@ -190,6 +190,44 @@ export default function TratamientosPage() {
                   </ul>
                 </div>
                 <a href="/#reservar" className="btn-outline border-[var(--color-brand-gold-text)] text-[var(--color-brand-gold-text)] inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
+                  Agendar Valoración
+                </a>
+              </div>
+
+              {/* Micropigmentación Adhara */}
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                  <CheckCircle2 className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Micropigmentación</h3>
+                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                  Realce semipermanente de rasgos faciales. Diseño artístico de cejas, labios y ojos con pigmentos premium.
+                </p>
+                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Sesión Inicial + Retoque</p>
+                  <p className="text-white text-3xl font-bold mb-2">desde $3,500 MXN</p>
+                  <p className="text-neutral-500 text-sm">Incluye diseño de visagismo y kit post-cuidado.</p>
+                </div>
+                <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                  Agendar Valoración
+                </a>
+              </div>
+
+              {/* Depilación Láser */}
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
+                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                  <Wind className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">Depilación Láser</h3>
+                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                  Eliminación definitiva del vello con tecnología de enfriamiento para una experiencia cómoda y segura.
+                </p>
+                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Paquetes de 6 Sesiones</p>
+                  <p className="text-white text-3xl font-bold mb-2">desde $1,999 MXN</p>
+                  <p className="text-neutral-500 text-sm">Precios preferenciales en cuerpo completo o zonas combinadas.</p>
+                </div>
+                <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
                   Agendar Valoración
                 </a>
               </div>

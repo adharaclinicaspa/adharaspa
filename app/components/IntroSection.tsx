@@ -16,8 +16,8 @@ export default function IntroSection() {
         </BlurReveal>
 
         <BlurReveal delay={0.3}>
-          <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold tracking-tight text-white leading-tight mb-8 max-w-4xl mx-auto">
-            Descubre <span className="text-gold-gradient">tratamientos de nivel premium</span> diseñados para rejuvenecer, reafirmar y potenciar tu belleza natural.
+          <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold tracking-tight text-white leading-tight mb-8 max-w-3xl mx-auto">
+            Descubre <span className="text-gold-gradient">tratamientos de nivel premium</span> diseñados para <br className="hidden md:block" /> rejuvenecer, reafirmar y potenciar tu belleza natural.
           </h2>
         </BlurReveal>
 
