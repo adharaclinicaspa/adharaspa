@@ -76,7 +76,7 @@ export default function HeroSection() {
                  playsInline
                  className="w-full h-full object-cover opacity-70"
                >
-                 <source src="/videos/Vídeo Spa 3840x2160.mp4" type="video/mp4" />
+                 <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Hero%20Section%20video%20homepage.mp4" type="video/mp4" />
                </video>
                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
                <div className="absolute bottom-10 left-10 flex gap-4">
