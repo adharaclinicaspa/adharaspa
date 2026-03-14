@@ -54,11 +54,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", type: "image/png" },
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", sizes: "32x32", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", sizes: "180x180", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4", sizes: "180x180", type: "image/png" },
     ],
   },
 };
@@ -69,9 +69,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
-        <link rel="shortcut icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
-        <link rel="apple-touch-icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
+        <link rel="icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4" />
+        <link rel="shortcut icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4" />
+        <link rel="apple-touch-icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=4" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
