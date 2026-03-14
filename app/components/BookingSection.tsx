@@ -13,15 +13,6 @@ export default function BookingSection() {
       <div className="container-brand px-6 md:px-10 max-w-7xl mx-auto relative z-10">
         <div className="glass-panel border border-white/10 rounded-3xl p-6 md:p-12 flex flex-col lg:flex-row gap-12 items-center justify-between overflow-hidden relative">
           
-          {/* Background image blend */}
-          <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-            <Image 
-              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop"
-              alt="Texture background"
-              fill
-              className="object-cover mix-blend-overlay"
-            />
-          </div>
 
           <div className="w-full lg:w-1/2 relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left">
             <BlurReveal>

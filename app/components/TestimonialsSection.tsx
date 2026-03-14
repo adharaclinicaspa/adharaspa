@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
                 Lo Que Dicen Nuestros Pacientes
               </span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.1]">
-                No lo decimos nosotros. Escucha a quienes ya tuvieron su experiencia Adhara.
+                No lo decimos nosotros. Escucha a quienes ya tuvieron su experiencia <span className="text-[var(--color-brand-gold-text)]" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>.
               </h2>
             </div>
           </BlurReveal>

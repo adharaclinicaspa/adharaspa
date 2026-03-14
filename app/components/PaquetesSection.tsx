@@ -7,28 +7,28 @@ export default function PaquetesSection() {
       id: "faciales",
       title: "Experiencias Faciales",
       description: "Rituales personalizados enfocados en rejuvenecimiento, control de acné y efecto glow.",
-      video: "https://assets.mixkit.co/videos/preview/mixkit-beautiful-woman-having-a-facial-treatment-at-a-spa-wellness-42211-large.mp4",
-      highlight: false
-    },
-    {
-      id: "corporales",
-      title: "Protocolos Corporales",
-      description: "Tecnología de última generación para moldear, reafirmar y mejorar la textura de la piel.",
-      video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-getting-a-back-massage-at-a-spa-42205-large.mp4",
+      video: "/videos/Vídeo Facial Pexels.mp4",
       highlight: false
     },
     {
       id: "micropigmentacion",
       title: "Micropigmentación",
       description: "Realce semipermanente artístico para cejas, labios y ojos con pigmentos de grado médico.",
-      video: "https://assets.mixkit.co/videos/preview/mixkit-makeup-artist-applying-eyeshadow-to-a-model-41018-large.mp4",
+      video: "/videos/Micropigmentación UHD 4096 2160.mp4",
       highlight: true
+    },
+    {
+      id: "corporales",
+      title: "Protocolos Corporales",
+      description: "Tecnología de última generación para moldear, reafirmar y mejorar la textura de la piel.",
+      video: "/videos/Vídeo Spa 1920x1080.mp4",
+      highlight: false
     },
     {
       id: "depilacion",
       title: "Depilación Láser",
       description: "Eliminación definitiva del vello con tecnología de enfriamiento para máximo confort.",
-      video: "https://assets.mixkit.co/videos/preview/mixkit-young-woman-having-a-laser-hair-removal-procedure-42209-large.mp4",
+      video: "/videos/Vídeo Spa 3840x2160.mp4",
       highlight: false
     }
   ];
@@ -108,7 +108,7 @@ function PackageCard({ pkg }: { pkg: any }) {
           href="/experiencia" 
           className="btn-gold px-8 py-3 rounded-full text-black font-bold text-sm inline-flex items-center gap-2 group/btn"
         >
-          Descubre la Experiencia
+          Vive la Experiencia
         </a>
       </div>
     </div>
