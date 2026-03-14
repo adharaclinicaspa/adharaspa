@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon-180x180.png",
-    shortcut: "/favicon-32x32.png",
+    icon: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
+    apple: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
+    shortcut: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
   },
 };
 

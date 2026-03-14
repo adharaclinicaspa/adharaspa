@@ -25,7 +25,7 @@ export default function TratamientosPage() {
       titulo: "Micropigmentación",
       descripcion: "Diseño y corrección semipermanente para realzar tus facciones con naturalidad las 24 horas del día.",
       icono: CheckCircle2,
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/6641580-uhd_4096_2160_25fps.mp4",
       lista: [
         "Microblading y Powder Brows (Cejas)",
         "Micropigmentación de Labios (Acuarela Lips)",
@@ -38,7 +38,7 @@ export default function TratamientosPage() {
       titulo: "Protocolos Corporales",
       descripcion: "Tecnología y maniobras enfocadas en la remodelación corporal y mejora de la calidad de piel.",
       icono: Droplet,
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%204K.mp4",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4",
       lista: [
         "Masajes Reductivos y Moldeadores",
         "Drenaje Linfático",
@@ -52,7 +52,7 @@ export default function TratamientosPage() {
       titulo: "Depilación Láser",
       descripcion: "Tecnología de punta para la eliminación definitiva del vello, segura y apta para todo tipo de piel.",
       icono: Wind,
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Depilacio%CC%81n%20La%CC%81ser%20UHD%202160.mp4",
       lista: [
         "Rostro Completo",
         "Axilas y Brazos",
@@ -186,7 +186,7 @@ export default function TratamientosPage() {
                   autoPlay muted loop playsInline 
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
                 >
-                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%204K.mp4" type="video/mp4" />
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
@@ -220,7 +220,7 @@ export default function TratamientosPage() {
                   autoPlay muted loop playsInline 
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
                 >
-                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4" type="video/mp4" />
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/6641580-uhd_4096_2160_25fps.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
@@ -252,7 +252,7 @@ export default function TratamientosPage() {
                   autoPlay muted loop playsInline 
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
                 >
-                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4" type="video/mp4" />
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Depilacio%CC%81n%20La%CC%81ser%20UHD%202160.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
