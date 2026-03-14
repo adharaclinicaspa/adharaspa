@@ -3,28 +3,43 @@ import "./globals.css";
 import { TopBanner } from "./components/ui/TopBanner";
 
 export const metadata: Metadata = {
-  title: "Adhara Clínica Spa – Micropigmentación y Tratamientos Estéticos de Lujo en CDMX",
+  metadataBase: new URL('https://adharaclinicaspa.com'),
+  title: {
+    default: "Adhara Clínica Spa | Micropigmentación y Estética de Lujo en CDMX",
+    template: "%s | Adhara Clínica Spa"
+  },
   description:
-    "Micropigmentación profesional, tratamientos faciales y corporales con tecnología de última generación. Valoración gratuita. Zona Lindavista, Ciudad de México.",
+    "Especialistas en Micropigmentación artística, tratamientos faciales avanzados y protocolos corporales con tecnología de vanguardia. Resultados reales para tu belleza natural en CDMX.",
   keywords: [
-    "micropigmentación CDMX", "clínica estética México City", "tratamientos faciales lujo",
-    "depilación láser", "spa Lindavista", "cejas micropigmentación",
+    "micropigmentación CDMX", "clínica estética Lindavista", "tratamientos faciales de lujo México",
+    "depilación láser profesional", "spa de lujo CDMX", "cejas powder brows México",
+    "rejuvenecimiento facial avanzado", "Adhara Clínica Spa"
   ],
   openGraph: {
-    title: "Adhara Clínica Spa – Micropigmentación y Tratamientos Estéticos de Lujo",
+    title: "Adhara Clínica Spa | Micropigmentación y Estética de Lujo",
     description:
-      "Micropigmentación profesional, tratamientos faciales y corporales con tecnología de última generación. Valoración gratuita. Zona Lindavista, CDMX.",
+      "Descubre el arte del cuidado consciente. Micropigmentación, faciales y tecnología estética de élite en Ciudad de México.",
+    url: "https://adharaclinicaspa.com",
+    siteName: "Adhara Clínica Spa",
+    images: [
+      {
+        url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
+        width: 1200,
+        height: 630,
+        alt: "Adhara Clínica Spa Logo",
+      },
+    ],
     locale: "es_MX",
     type: "website",
-    siteName: "Adhara Clínica Spa",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adhara Clínica Spa – Micropigmentación de Lujo",
-    description: "Resultados que evolucionan contigo. Clínica estética líder en Lindavista, CDMX.",
+    title: "Adhara Clínica Spa | Belleza que Evoluciona",
+    description: "Tratamientos estéticos de lujo y micropigmentación profesional en Lindavista, CDMX.",
+    images: ["https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png"],
   },
   alternates: {
-    canonical: "https://adharaclinicaspa_placeholder.com",
+    canonical: "https://adharaclinicaspa.com",
   },
   robots: {
     index: true,
@@ -38,9 +53,13 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
-    apple: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
-    shortcut: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png",
+    icon: [
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 

@@ -74,6 +74,7 @@ export default function HeroSection() {
                  muted
                  loop
                  playsInline
+                 preload="auto"
                  className="w-full h-full object-cover opacity-70"
                >
                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Hero%20Section%20video%20homepage.mp4" type="video/mp4" />

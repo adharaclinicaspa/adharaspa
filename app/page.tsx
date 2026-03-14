@@ -8,7 +8,6 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import FAQSection from "./components/FAQSection";
 import BookingSection from "./components/BookingSection";
 import Footer from "./components/Footer";
-import WhatsAppFloat from "./components/WhatsAppFloat";
 
 export default function Home() {
   return (
@@ -34,7 +33,6 @@ export default function Home() {
         <BookingSection />
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }
