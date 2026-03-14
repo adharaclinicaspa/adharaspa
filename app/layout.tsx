@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TopBanner } from "./components/ui/TopBanner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://adharaspa.com'),
@@ -102,6 +104,8 @@ export default function RootLayout({
       <body>
         <TopBanner />
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
