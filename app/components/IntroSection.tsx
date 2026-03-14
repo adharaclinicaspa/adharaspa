@@ -17,13 +17,16 @@ export default function IntroSection() {
 
         <BlurReveal delay={0.3}>
           <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold tracking-tight text-white leading-tight mb-8 max-w-3xl mx-auto">
-            Descubre <span className="text-gold-gradient">tratamientos de nivel premium</span> diseñados para <br className="hidden md:block" /> rejuvenecer, reafirmar y potenciar tu belleza natural.
+            Descubre tratamientos de nivel premium diseñados para rejuvenecer, reafirmar y potenciar tu belleza natural.
           </h2>
         </BlurReveal>
 
         <BlurReveal delay={0.5}>
           <p className="text-neutral-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Cada protocolo está diseñado específicamente para resaltar tu brillo interior, combinando estética de vanguardia con un trato cálido y personalizado. Vive la diferencia Adhara.
+            Cada protocolo está diseñado específicamente para resaltar tu brillo interior, combinando estética de vanguardia con un trato cálido y personalizado. 
+            <br className="mt-6 block" />
+            <span className="text-white">Vive la experiencia </span>
+            <span className="text-[var(--color-brand-gold-text)] text-2xl" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>.
           </p>
         </BlurReveal>
       </div>

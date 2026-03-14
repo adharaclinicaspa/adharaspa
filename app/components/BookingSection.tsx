@@ -1,15 +1,16 @@
 "use client";
+import { ArrowRight, Calendar, Clock, MapPin, Sparkles } from "lucide-react";
+import { ParticleBackground } from "./ui/ParticleBackground";
 import { BlurReveal } from "./ui/BlurReveal";
 import Image from "next/image";
 
 export default function BookingSection() {
   return (
-    <section id="reservar" className="py-24 bg-[var(--color-brand-bg)] relative overflow-hidden">
+    <section id="reservar" className="py-24 relative overflow-hidden bg-black">
+      {/* Background Effect */}
+      <ParticleBackground className="absolute inset-0 opacity-30" />
       
-      {/* Glow effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[400px] bg-[var(--color-brand-gold-text)] opacity-[0.03] rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="container-brand px-6 md:px-10 max-w-6xl mx-auto relative z-10">
+      <div className="container-brand px-6 md:px-10 max-w-7xl mx-auto relative z-10">
         <div className="glass-panel border border-white/10 rounded-3xl p-6 md:p-12 flex flex-col lg:flex-row gap-12 items-center justify-between overflow-hidden relative">
           
           {/* Background image blend */}
@@ -35,20 +36,14 @@ export default function BookingSection() {
               </p>
             </BlurReveal>
             <BlurReveal delay={0.2} className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
-              <a 
-                href="https://wa.me/525612979701" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="btn-outline px-8 py-3 rounded-full flex items-center justify-center text-white"
-              >
-                WhatsApp
-              </a>
-              <a 
-                href="tel:+525612979701" 
-                className="btn-outline px-8 py-3 rounded-full flex items-center justify-center text-white"
-              >
-                Llamada Directa
-              </a>
+                <a 
+                  href="https://adharaclinicaspa.setmore.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-gold px-8 py-4 rounded-full text-black font-bold flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.2)]"
+                >
+                  Probar la experiencia Adhara <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
             </BlurReveal>
           </div>
 

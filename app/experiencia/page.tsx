@@ -13,19 +13,22 @@ export default function ExperienciaPage() {
         {/* Experience Hero */}
         <section className="container-brand px-6 md:px-10 max-w-6xl mx-auto mb-32">
           <div className="relative h-[60vh] md:h-[80vh] rounded-[3rem] overflow-hidden group">
-            <Image 
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop"
-              alt="Experiencia Adhara"
-              fill
-              className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-[2s]"
-            />
+            <video 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-[2s]"
+            >
+              <source src="https://assets.mixkit.co/videos/preview/mixkit-beautiful-woman-having-a-facial-treatment-at-a-spa-wellness-42211-large.mp4" type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
               <span className="inline-block mb-6 text-[var(--color-brand-gold-text)] font-semibold tracking-[0.3em] text-sm uppercase">
                 Bienvenido a lo extraordinario
               </span>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 tracking-tighter">
-                El Arte del <br/><span className="text-gold-gradient" style={{ fontFamily: "'Pinyon Script', cursive" }}>Cuidado Consciente</span>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 tracking-tighter leading-[1.1] pb-4">
+                El Arte del <br/><span className="text-gold-gradient py-2 inline-block" style={{ fontFamily: "'Pinyon Script', cursive" }}>Cuidado Consciente</span>
               </h1>
               <p className="text-neutral-300 text-lg md:text-xl max-w-2xl leading-relaxed">
                 En Adhara Clínica Spa, no solo realizamos tratamientos. Creamos rituales de transformación 
@@ -91,7 +94,7 @@ export default function ExperienciaPage() {
         <section className="py-32 bg-neutral-900/30 border-y border-white/5">
           <div className="container-brand px-6 md:px-10 max-w-4xl mx-auto text-center">
              <Sparkles className="w-12 h-12 text-[var(--color-brand-gold-text)] mx-auto mb-8 opacity-50" />
-             <h2 className="text-3xl md:text-5xl font-light italic text-white leading-relaxed mb-12">
+             <h2 className="text-3xl md:text-5xl font-bold text-white leading-relaxed mb-12">
                "Nuestra misión es que al mirarte en el espejo, no solo veas una piel rejuvenecida, 
                sino a alguien que ha decidido <span className="text-[var(--color-brand-gold-text)]">priorizar su propio bienestar</span>."
              </h2>
@@ -107,7 +110,7 @@ export default function ExperienciaPage() {
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a href="/#reservar" className="btn-gold px-12 py-5 rounded-full text-lg shadow-[0_0_30px_rgba(212,175,55,0.3)]">
-                Agendar Valoración Sin Costo
+                Probar la experiencia Adhara
               </a>
               <a href="/tratamientos" className="btn-outline px-12 py-5 rounded-full text-lg">
                 Explorar Tratamientos

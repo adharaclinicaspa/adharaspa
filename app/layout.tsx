@@ -16,6 +16,26 @@ export const metadata: Metadata = {
       "Micropigmentación profesional, tratamientos faciales y corporales con tecnología de última generación. Valoración gratuita. Zona Lindavista, CDMX.",
     locale: "es_MX",
     type: "website",
+    siteName: "Adhara Clínica Spa",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adhara Clínica Spa – Micropigmentación de Lujo",
+    description: "Resultados que evolucionan contigo. Clínica estética líder en Lindavista, CDMX.",
+  },
+  alternates: {
+    canonical: "https://adharaclinicaspa_placeholder.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

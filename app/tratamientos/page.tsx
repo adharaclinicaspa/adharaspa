@@ -123,7 +123,7 @@ export default function TratamientosPage() {
                     </ul>
 
                     <a href="/#reservar" className="btn-outline px-8 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                      Agendar Valoración
+                      Probar la experiencia Adhara
                     </a>
                   </div>
 
@@ -162,16 +162,14 @@ export default function TratamientosPage() {
                   <p className="text-white text-3xl font-bold mb-2">desde $2,999 MXN</p>
                   <p className="text-neutral-500 text-sm">Ideal para quienes buscan luminosidad inmediata o transformación profunda de la piel.</p>
                 </div>
-                <a href="/#reservar" className="btn-gold inline-flex w-full justify-center px-6 py-4 rounded-full text-black font-semibold text-sm">
-                  Agendar Valoración
+                 <a href="/#reservar" className="btn-gold inline-flex w-full justify-center px-6 py-4 rounded-full text-black font-semibold text-sm">
+                  Probar la experiencia Adhara
                 </a>
               </div>
 
               {/* Protocolos Corporales */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
-                <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg">
-                  MÁS POPULAR
-                </div>
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
+
                 <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
                   <Droplet className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
                 </div>
@@ -189,13 +187,16 @@ export default function TratamientosPage() {
                     <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Mejora de textura (celulitis)</li>
                   </ul>
                 </div>
-                <a href="/#reservar" className="btn-outline border-[var(--color-brand-gold-text)] text-[var(--color-brand-gold-text)] inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
-                  Agendar Valoración
+                <a href="/#reservar" className="btn-outline inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
+                  Probar la experiencia Adhara
                 </a>
               </div>
 
               {/* Micropigmentación Adhara */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
+              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
+                <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg font-inter">
+                  MÁS POPULAR
+                </div>
                 <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
                   <CheckCircle2 className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
                 </div>
@@ -209,7 +210,7 @@ export default function TratamientosPage() {
                   <p className="text-neutral-500 text-sm">Incluye diseño de visagismo y kit post-cuidado.</p>
                 </div>
                 <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                  Agendar Valoración
+                  Probar la experiencia Adhara
                 </a>
               </div>
 
@@ -228,7 +229,7 @@ export default function TratamientosPage() {
                   <p className="text-neutral-500 text-sm">Precios preferenciales en cuerpo completo o zonas combinadas.</p>
                 </div>
                 <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                  Agendar Valoración
+                  Probar la experiencia Adhara
                 </a>
               </div>
             </div>

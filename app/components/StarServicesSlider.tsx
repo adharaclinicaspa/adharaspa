@@ -39,6 +39,19 @@ export default function StarServicesSlider() {
                       </span>
                     </div>
                   ))}
+                  {/* The instruction seems to imply adding a new element, as "Agendar Valoración" is not present.
+                      Assuming the user wants to add a button/link with the new text "Probar la experiencia Adhara"
+                      as an additional item in the marquee, or perhaps as a separate call to action.
+                      Given the provided code edit, it seems to be intended as an additional item within the marquee.
+                      However, placing it inside the icon div would replace the icon.
+                      I will place it as a separate item in the marquee, following the structure of existing items.
+                      If the intent was to replace an existing text, please provide the exact text to be replaced.
+                  */}
+                  <div className="flex items-center gap-3 px-4 group">
+                    <a href="/#reservar" className="btn-gold px-8 py-3 rounded-full text-black font-semibold text-sm">
+                      Probar la experiencia Adhara
+                    </a>
+                  </div>
                 </Marquee>
               </div>
             </div>

@@ -2,12 +2,13 @@
 import Image from "next/image";
 import { ArrowUpRight, Star } from "lucide-react";
 import { BlurReveal } from "./ui/BlurReveal";
+import { ShineBorder } from "./ui/ShineBorder"; // Added ShineBorder import
 import { cn } from "../../lib/utils";
 
 export default function HeroSection() {
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="relative min-h-[100svh] flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden text-center"
     >
       {/* Background glow effects */}
@@ -15,7 +16,7 @@ export default function HeroSection() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-white opacity-[0.02] rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container-brand px-6 md:px-10 mx-auto w-full max-w-5xl z-10 flex flex-col items-center">
-        
+
         {/* Google Reviews Badge */}
         <BlurReveal delay={0.1}>
           <div className="inline-flex items-center gap-3 glass-pill px-4 py-2 mb-8 bg-black/40 border border-white/10">
@@ -32,20 +33,17 @@ export default function HeroSection() {
             </span>
           </div>
         </BlurReveal>
-        
+
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-bold tracking-tight text-white leading-[1.05] mb-8">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-[90px] font-bold tracking-tighter text-white leading-none mb-10">
           <BlurReveal delay={0.2}>
-            El cuidado que
-          </BlurReveal>
-          <BlurReveal delay={0.3}>
-            mereces<span className="text-[var(--color-brand-gold-text)]">.</span>
+            El cuidado que mereces<span className="text-[var(--color-brand-gold-text)]">.</span>
           </BlurReveal>
         </h1>
 
         <BlurReveal delay={0.4}>
           <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
-            En Adhara Clínica Spa, creemos que el amor propio comienza con el cuidado de tu ser. 
+            En Adhara Clínica Spa, creemos que el amor propio comienza con el cuidado de tu ser.
             Un momento de paz para ti, una transformación real para tu piel.
           </p>
         </BlurReveal>
@@ -56,7 +54,7 @@ export default function HeroSection() {
             href="#reservar"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 btn-gold px-8 py-4 rounded-full font-semibold text-sm transition-transform shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
           >
-            Haz tu reserva
+            Probar la experiencia Adhara
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
@@ -66,29 +64,29 @@ export default function HeroSection() {
             Ver Tratamientos
           </a>
         </BlurReveal>
-        
+
         {/* Hero Bottom Image Teaser (Optional Centered element) */}
-        <BlurReveal delay={0.6} className="mt-20 w-full max-w-4xl relative aspect-video md:aspect-[21/9] rounded-t-3xl overflow-hidden glass-panel border-b-0">
-           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-brand-bg)] to-transparent z-10" />
-           <Image
-              src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1200&auto=format&fit=crop"
-              alt="Adhara Spa"
-              fill
-              className="object-cover opacity-60 mix-blend-luminosity"
-              priority
-           />
-           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 glass-pill px-6 py-3 bg-black/50 text-white text-xs tracking-widest uppercase font-medium flex items-center gap-3 backdrop-blur-md border-white/10 whitespace-nowrap">
-              <span>Clínica Spa con sede en Lindavista, CDMX</span>
-              <div className="w-px h-3 bg-white/20" />
-              <a 
-                href="https://maps.app.goo.gl/uXv7uXN9v5yvS6Y9A" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-[var(--color-brand-gold-text)] hover:underline font-bold"
-              >
-                Ver ubicación
-              </a>
-           </div>
+        <BlurReveal delay={0.5} className="mt-12 w-full max-w-5xl mx-auto">
+          <ShineBorder borderRadius="3rem" className="w-full">
+            <div className="relative aspect-video rounded-[3rem] overflow-hidden bg-neutral-900">
+               <video
+                 autoPlay
+                 muted
+                 loop
+                 playsInline
+                 className="w-full h-full object-cover opacity-70"
+               >
+                 <source src="https://assets.mixkit.co/videos/preview/mixkit-beautiful-woman-having-a-facial-treatment-at-a-spa-wellness-42211-large.mp4" type="video/mp4" />
+               </video>
+               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+               <div className="absolute bottom-10 left-10 flex gap-4">
+                 <div className="glass-pill px-6 py-2 flex items-center gap-2">
+                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                   <span className="text-xs font-semibold text-white tracking-widest uppercase">Resultados Reales</span>
+                 </div>
+               </div>
+            </div>
+          </ShineBorder>
         </BlurReveal>
 
       </div>

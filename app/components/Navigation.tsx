@@ -100,7 +100,7 @@ export default function Navigation() {
             className="w-full text-center px-6 py-3 rounded-full btn-gold text-sm mt-4 text-black font-semibold" 
             onClick={() => setMenuOpen(false)}
           >
-            Agendar Valoración
+            Probar experiencia
           </a>
         </div>
       </div>
