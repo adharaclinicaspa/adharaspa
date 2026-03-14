@@ -56,11 +56,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-adhara.png?v=5", type: "image/png" },
-      { url: "/favicon-adhara.png?v=5", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-adhara.png?v=6", type: "image/png" },
+      { url: "/favicon-adhara.png?v=6", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/favicon-adhara.png?v=5", sizes: "180x180", type: "image/png" },
+      { url: "/favicon-adhara.png?v=6", sizes: "180x180", type: "image/png" },
     ],
   },
 };
@@ -71,9 +71,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon-adhara.png?v=5" />
-        <link rel="shortcut icon" href="/favicon-adhara.png?v=5" />
-        <link rel="apple-touch-icon" href="/favicon-adhara.png?v=5" />
+        <link rel="icon" href="/favicon-adhara.png?v=6" />
+        <link rel="shortcut icon" href="/favicon-adhara.png?v=6" />
+        <link rel="apple-touch-icon" href="/favicon-adhara.png?v=6" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
