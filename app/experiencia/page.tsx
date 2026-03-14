@@ -117,7 +117,7 @@ export default function ExperienciaPage() {
         <section className="py-40">
           <div className="container-brand px-6 md:px-10 max-w-5xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-10">
-              ¿Lista para tu momento <span className="text-[var(--color-brand-gold-text)]" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>?
+              ¿Lista para tu momento <span className="text-[var(--color-brand-gold-text)] font-normal" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>?
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a href="/#reservar" className="btn-gold px-12 py-5 rounded-full text-lg shadow-[0_0_30px_rgba(212,175,55,0.3)]">

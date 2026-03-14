@@ -11,7 +11,7 @@ export default function TratamientosPage() {
       titulo: "Experiencias Faciales",
       descripcion: "Rituales diseñados para limpiar, nutrir y rejuvenecer la piel desde las capas más profundas.",
       icono: Sparkles,
-      imagen: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4",
       lista: [
         "Limpieza Facial Profunda con aparatología",
         "Control de Acné activo y secuelas",
@@ -21,11 +21,24 @@ export default function TratamientosPage() {
       ]
     },
     {
+      id: "micropigmentacion",
+      titulo: "Micropigmentación",
+      descripcion: "Diseño y corrección semipermanente para realzar tus facciones con naturalidad las 24 horas del día.",
+      icono: CheckCircle2,
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4",
+      lista: [
+        "Microblading y Powder Brows (Cejas)",
+        "Micropigmentación de Labios (Acuarela Lips)",
+        "Delineado de Ojos (Eyeliner clásico y sombreado)",
+        "Retoques y corrección de color"
+      ]
+    },
+    {
       id: "corporales",
       titulo: "Protocolos Corporales",
       descripcion: "Tecnología y maniobras enfocadas en la remodelación corporal y mejora de la calidad de piel.",
       icono: Droplet,
-      imagen: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%204K.mp4",
       lista: [
         "Masajes Reductivos y Moldeadores",
         "Drenaje Linfático",
@@ -35,24 +48,11 @@ export default function TratamientosPage() {
       ]
     },
     {
-      id: "micropigmentacion",
-      titulo: "Micropigmentación",
-      descripcion: "Diseño y corrección semipermanente para realzar tus facciones con naturalidad las 24 horas del día.",
-      icono: CheckCircle2,
-      imagen: "https://images.unsplash.com/photo-1596178065887-113861d8d4e7?q=80&w=1200&auto=format&fit=crop",
-      lista: [
-        "Microblading y Powder Brows (Cejas)",
-        "Micropigmentación de Labios (Acuarela Lips)",
-        "Delineado de Ojos (Eyeliner clásico y sombreado)",
-        "Retoques y corrección de color"
-      ]
-    },
-    {
       id: "depilacion",
       titulo: "Depilación Láser",
       descripcion: "Tecnología de punta para la eliminación definitiva del vello, segura y apta para todo tipo de piel.",
       icono: Wind,
-      imagen: "https://images.unsplash.com/photo-1522338140262-f46f5912018a?q=80&w=1200&auto=format&fit=crop",
+      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4",
       lista: [
         "Rostro Completo",
         "Axilas y Brazos",
@@ -92,13 +92,16 @@ export default function TratamientosPage() {
                   
                   {/* Imagen */}
                   <div className="w-full lg:w-1/2">
-                    <div className="relative aspect-[4/3] rounded-3xl overflow-hidden glass-panel border border-white/10 group">
-                      <Image
-                        src={servicio.imagen}
-                        alt={servicio.titulo}
-                        fill
-                        className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
-                      />
+                    <div className="relative aspect-[4/3] rounded-3xl overflow-hidden glass-panel border border-white/10 group bg-neutral-900">
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                      >
+                        <source src={servicio.video} type="video/mp4" />
+                      </video>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                     </div>
                   </div>
@@ -148,89 +151,128 @@ export default function TratamientosPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
               {/* Experiencias Faciales */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
-                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
-                  <Sparkles className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+              <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col relative overflow-hidden">
+                <video 
+                  autoPlay muted loop playsInline 
+                  className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
+                >
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
+                
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                    <Sparkles className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Experiencias Faciales</h3>
+                  <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                    Rituales personalizados enfocados en rejuvenecimiento, control de acné, 
+                    despigmentación, efecto glow y bioestimulación avanzada (Dermapen).
+                  </p>
+                  <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                    <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Programa de 3 o 6 sesiones</p>
+                    <p className="text-white text-3xl font-bold mb-2">desde $2,999 MXN</p>
+                    <p className="text-neutral-500 text-sm">Ideal para quienes buscan luminosidad inmediata o transformación profunda de la piel.</p>
+                  </div>
+                   <a href="/#reservar" className="btn-gold inline-flex w-full justify-center px-6 py-4 rounded-full text-black font-semibold text-sm">
+                    Vive la Experiencia
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Experiencias Faciales</h3>
-                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
-                  Rituales personalizados enfocados en rejuvenecimiento, control de acné, 
-                  despigmentación, efecto glow y bioestimulación avanzada (Dermapen).
-                </p>
-                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
-                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Programa de 3 o 6 sesiones</p>
-                  <p className="text-white text-3xl font-bold mb-2">desde $2,999 MXN</p>
-                  <p className="text-neutral-500 text-sm">Ideal para quienes buscan luminosidad inmediata o transformación profunda de la piel.</p>
-                </div>
-                 <a href="/#reservar" className="btn-gold inline-flex w-full justify-center px-6 py-4 rounded-full text-black font-semibold text-sm">
-                  Probar la experiencia Adhara
-                </a>
               </div>
 
               {/* Protocolos Corporales */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
+              <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
+                <video 
+                  autoPlay muted loop playsInline 
+                  className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
+                >
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%204K.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
-                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
-                  <Droplet className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                    <Droplet className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Protocolos Corporales</h3>
+                  <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                    Tecnología estética de última generación para moldear, reafirmar y 
+                    mejorar la textura de la piel. Una experiencia de evolución y cuidado.
+                  </p>
+                  <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                    <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Planes a Medida</p>
+                    <p className="text-neutral-400 text-sm mb-4">Diseñamos el protocolo ideal después de tu valoración inicial sin costo.</p>
+                    <ul className="text-neutral-300 space-y-2 text-sm">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Moldéo corporal avanzado</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Firmeza y tonificación</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Mejora de textura (celulitis)</li>
+                    </ul>
+                  </div>
+                  <a href="/#reservar" className="btn-outline inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
+                    Vive la Experiencia
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Protocolos Corporales</h3>
-                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
-                  Tecnología estética de última generación para moldear, reafirmar y 
-                  mejorar la textura de la piel. Una experiencia de evolución y cuidado.
-                </p>
-                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
-                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Planes a Medida</p>
-                  <p className="text-neutral-400 text-sm mb-4">Diseñamos el protocolo ideal después de tu valoración inicial sin costo.</p>
-                  <ul className="text-neutral-300 space-y-2 text-sm">
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Moldéo corporal avanzado</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Firmeza y tonificación</li>
-                    <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[var(--color-brand-gold-text)]" /> Mejora de textura (celulitis)</li>
-                  </ul>
-                </div>
-                <a href="/#reservar" className="btn-outline inline-flex w-full justify-center px-6 py-4 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
-                  Probar la experiencia Adhara
-                </a>
               </div>
 
               {/* Micropigmentación Adhara */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
-                <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg font-inter">
+              <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
+                <video 
+                  autoPlay muted loop playsInline 
+                  className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
+                >
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
+
+                <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg font-inter z-20">
                   MÁS POPULAR
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
-                  <CheckCircle2 className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                    <CheckCircle2 className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Micropigmentación</h3>
+                  <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                    Realce semipermanente de rasgos faciales. Diseño artístico de cejas, labios y ojos con pigmentos premium.
+                  </p>
+                  <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                    <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Sesión Inicial + Retoque</p>
+                    <p className="text-white text-3xl font-bold mb-2">desde $3,500 MXN</p>
+                    <p className="text-neutral-500 text-sm">Incluye diseño de visagismo y kit post-cuidado.</p>
+                  </div>
+                  <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                    Vive la Experiencia
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Micropigmentación</h3>
-                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
-                  Realce semipermanente de rasgos faciales. Diseño artístico de cejas, labios y ojos con pigmentos premium.
-                </p>
-                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
-                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Sesión Inicial + Retoque</p>
-                  <p className="text-white text-3xl font-bold mb-2">desde $3,500 MXN</p>
-                  <p className="text-neutral-500 text-sm">Incluye diseño de visagismo y kit post-cuidado.</p>
-                </div>
-                <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                  Probar la experiencia Adhara
-                </a>
               </div>
 
               {/* Depilación Láser */}
-              <div className="glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col">
-                <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
-                  <Wind className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+              <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
+                <video 
+                  autoPlay muted loop playsInline 
+                  className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
+                >
+                  <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
+
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-8">
+                    <Wind className="w-7 h-7 text-[var(--color-brand-gold-text)]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">Depilación Láser</h3>
+                  <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
+                    Eliminación definitiva del vello con tecnología de enfriamiento para una experiencia cómoda y segura.
+                  </p>
+                  <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
+                    <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Paquetes de 6 Sesiones</p>
+                    <p className="text-white text-3xl font-bold mb-2">desde $1,999 MXN</p>
+                    <p className="text-neutral-500 text-sm">Precios preferenciales en cuerpo completo o zonas combinadas.</p>
+                  </div>
+                  <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                    Vive la Experiencia
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Depilación Láser</h3>
-                <p className="text-neutral-300 mb-8 leading-relaxed flex-grow">
-                  Eliminación definitiva del vello con tecnología de enfriamiento para una experiencia cómoda y segura.
-                </p>
-                <div className="p-6 bg-black/50 rounded-2xl border border-white/5 mb-8">
-                  <p className="text-[var(--color-brand-gold-text)] font-semibold text-lg mb-2">Paquetes de 6 Sesiones</p>
-                  <p className="text-white text-3xl font-bold mb-2">desde $1,999 MXN</p>
-                  <p className="text-neutral-500 text-sm">Precios preferenciales en cuerpo completo o zonas combinadas.</p>
-                </div>
-                <a href="/#reservar" className="btn-outline px-6 py-4 rounded-full text-white font-semibold text-sm flex justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
-                  Probar la experiencia Adhara
-                </a>
               </div>
             </div>
 
