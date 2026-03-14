@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Adhara Clínica Spa",
     images: [
       {
-        url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.png",
+        url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.jpeg",
         width: 1200,
         height: 630,
         alt: "Adhara Clínica Spa - El Arte del Cuidado Consciente",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adhara Clínica Spa | Belleza que Evoluciona",
     description: "Tratamientos de alta gama y micropigmentación profesional en Lindavista, CDMX.",
-    images: ["https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.png"],
+    images: ["https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.jpeg"],
   },
   alternates: {
     canonical: "https://adharaspa.com",
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png", type: "image/png" },
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png", sizes: "32x32", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png", sizes: "180x180", type: "image/png" },
+      { url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2", sizes: "180x180", type: "image/png" },
     ],
   },
 };
@@ -69,9 +69,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png" />
-        <link rel="shortcut icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png" />
-        <link rel="apple-touch-icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png" />
+        <link rel="icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
+        <link rel="shortcut icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
+        <link rel="apple-touch-icon" href="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/favicon%20adhara.png?v=2" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
