@@ -1,6 +1,5 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import WhatsAppFloat from "../components/WhatsAppFloat";
 import Image from "next/image";
 import { Star, ShieldCheck, Heart, Sparkles } from "lucide-react";
 
@@ -72,7 +71,7 @@ export default function ExperienciaPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Ciencia y Resultados</h3>
-                    <p className="text-neutral-400">Aparatología de última generación y protocolos médicos estéticos certificados para garantizar cambios visibles desde la primera sesión.</p>
+                    <p className="text-neutral-400">Aparatología de última generación y protocolos de clínica estética certificados para garantizar cambios visibles desde la primera sesión.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -132,7 +131,6 @@ export default function ExperienciaPage() {
 
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }

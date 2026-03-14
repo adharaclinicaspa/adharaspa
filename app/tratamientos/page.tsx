@@ -1,6 +1,5 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import WhatsAppFloat from "../components/WhatsAppFloat";
 import Image from "next/image";
 import { CheckCircle2, Droplet, Sparkles, Wind } from "lucide-react";
 
@@ -77,7 +76,7 @@ export default function TratamientosPage() {
               Nuestros Tratamientos
             </h1>
             <p className="text-neutral-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              En Adhara Clínica Spa combinamos aparatología estética avanzada, ingredientes premium 
+              En Adhara Clínica Spa combinamos aparatología de alta gama, ingredientes premium 
               y maniobras precisas para ofrecerte resultados seguros, visibles y duraderos.
             </p>
           </div>
@@ -288,7 +287,6 @@ export default function TratamientosPage() {
         </div>
       </main>
       <Footer />
-      <WhatsAppFloat />
     </>
   );
 }
