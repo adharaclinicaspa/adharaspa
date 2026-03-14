@@ -24,7 +24,7 @@ export default function ExperienciaPage() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-[2s] z-0"
             >
-              <source src="https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Spa%20Relaxacio%CC%81n%20Video.mp4" type="video/mp4" />
+              <source src="/videos/relax.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20 z-0" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10">

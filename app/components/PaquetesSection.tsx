@@ -7,28 +7,28 @@ export default function PaquetesSection() {
       id: "faciales",
       title: "Experiencias Faciales",
       description: "Rituales personalizados enfocados en rejuvenecimiento, control de acné y efecto glow.",
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4",
+      video: "/videos/facial.mp4",
       highlight: false
     },
     {
       id: "micropigmentacion",
       title: "Micropigmentación",
       description: "Realce semipermanente artístico para cejas, labios y ojos con pigmentos de grado médico.",
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/6641580-uhd_4096_2160_25fps.mp4",
+      video: "/videos/micropigmentacion.mp4",
       highlight: true
     },
     {
       id: "corporales",
       title: "Protocolos Corporales",
       description: "Tecnología de última generación para moldear, reafirmar y mejorar la textura de la piel.",
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4",
+      video: "/videos/spa-videos.mp4",
       highlight: false
     },
     {
       id: "depilacion",
       title: "Depilación Láser",
       description: "Eliminación definitiva del vello con tecnología de enfriamiento para máximo confort.",
-      video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Depilacio%CC%81n%20La%CC%81ser%20UHD%202160.mp4",
+      video: "/videos/laser.mp4",
       highlight: false
     }
   ];

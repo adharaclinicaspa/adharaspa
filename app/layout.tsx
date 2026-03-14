@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Adhara Clínica Spa",
     images: [
       {
-        url: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.jpeg",
+        url: "/adhara-og.jpeg",
         width: 1200,
         height: 630,
         alt: "Adhara Clínica Spa - El Arte del Cuidado Consciente",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adhara Clínica Spa | Belleza que Evoluciona",
     description: "Tratamientos de alta gama y micropigmentación profesional en Lindavista, CDMX.",
-    images: ["https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Adhara%20Spa%20Clinic.jpeg"],
+    images: ["/adhara-og.jpeg"],
   },
   alternates: {
     canonical: "https://adharaspa.com",

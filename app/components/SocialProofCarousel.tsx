@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { User } from "lucide-react";
 
 const videos = [
-  { id: 1, video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/procedimiento%20facial.mp4", author: "@ana_skincare" },
-  { id: 2, video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%204K.mp4", author: "@adhara_clinica" },
-  { id: 3, video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deos%20de%20Spa%201080p.mp4", author: "@mari_tips" },
-  { id: 4, video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Vi%CC%81deo%20Spa%201080p.mp4", author: "@luxury_spa" },
-  { id: 5, video: "https://scwu2vendl74s1qu.public.blob.vercel-storage.com/Spa%20Relaxacio%CC%81n%20Video.mp4", author: "@pao_beauty" },
+  { id: 1, video: "/videos/facial.mp4", author: "@ana_skincare" },
+  { id: 2, video: "/videos/spa-4k.mp4", author: "@adhara_clinica" },
+  { id: 3, video: "/videos/spa-videos.mp4", author: "@mari_tips" },
+  { id: 4, video: "/videos/spa-1080p.mp4", author: "@luxury_spa" },
+  { id: 5, video: "/videos/relax.mp4", author: "@pao_beauty" },
 ];
 
 export default function SocialProofCarousel() {
