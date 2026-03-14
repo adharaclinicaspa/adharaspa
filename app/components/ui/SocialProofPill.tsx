@@ -5,9 +5,17 @@ export const SocialProofPill = ({ className }: { className?: string }) => {
   return (
     <div className={cn("inline-flex items-center gap-4 px-5 py-3 glass-pill", className)}>
       <div className="flex -space-x-3">
-        {[1, 2, 3].map((i) => (
+        {[
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&h=100&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=100&h=100&auto=format&fit=crop"
+        ].map((src, i) => (
           <div key={i} className="w-10 h-10 rounded-full border-2 border-[var(--color-brand-surface)] bg-neutral-800 overflow-hidden relative">
-            <div className={`w-full h-full bg-gradient-to-br from-neutral-600 to-neutral-800`} />
+            <img 
+               src={src} 
+               alt="Customer" 
+               className="w-full h-full object-cover"
+            />
           </div>
         ))}
         <div className="w-10 h-10 rounded-full border-2 border-[var(--color-brand-surface)] bg-neutral-900 flex items-center justify-center text-xs font-medium relative z-10 text-white">
