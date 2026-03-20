@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { CheckCircle2, Droplet, Sparkles, Wind } from "lucide-react";
+import { LazyVideo } from "../components/ui/LazyVideo";
 
 export default function TratamientosPage() {
   const servicios = [
@@ -92,16 +93,14 @@ export default function TratamientosPage() {
                   {/* Imagen */}
                   <div className="w-full lg:w-1/2">
                     <div className="relative aspect-[4/3] rounded-3xl overflow-hidden glass-panel border border-white/10 group bg-neutral-900">
-                      <video
+                      <LazyVideo
                         autoPlay
                         muted
                         loop
                         playsInline
-                        preload="none"
+                        src={servicio.video}
                         className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-                      >
-                        <source src={servicio.video} type="video/mp4" />
-                      </video>
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                     </div>
                   </div>
@@ -152,12 +151,11 @@ export default function TratamientosPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
               {/* Experiencias Faciales */}
               <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all flex flex-col relative overflow-hidden">
-                <video 
+                <LazyVideo 
                   autoPlay muted loop playsInline 
+                  src="/videos/facial.mp4"
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
-                >
-                  <source src="/videos/facial.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
                 
                 <div className="relative z-10 flex flex-col h-full">
@@ -182,12 +180,11 @@ export default function TratamientosPage() {
 
               {/* Protocolos Corporales */}
               <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
-                <video 
+                <LazyVideo 
                   autoPlay muted loop playsInline 
+                  src="/videos/spa-videos.mp4"
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
-                >
-                  <source src="/videos/spa-videos.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
                 <div className="relative z-10 flex flex-col h-full">
@@ -216,12 +213,11 @@ export default function TratamientosPage() {
 
               {/* Micropigmentación Adhara */}
               <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-[var(--color-brand-gold-text)]/30 hover:border-[var(--color-brand-gold-text)] transition-all relative overflow-hidden flex flex-col">
-                <video 
+                <LazyVideo 
                   autoPlay muted loop playsInline 
+                  src="/videos/micropigmentacion.mp4"
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
-                >
-                  <source src="/videos/micropigmentacion.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
                 <div className="absolute top-0 right-0 px-6 py-2 text-[10px] font-bold bg-gold-shimmer text-black rounded-bl-3xl tracking-widest uppercase shadow-lg font-inter z-20">
@@ -248,12 +244,11 @@ export default function TratamientosPage() {
 
               {/* Depilación Láser */}
               <div className="group glass-panel p-8 md:p-10 rounded-3xl border border-white/10 hover:border-white/20 transition-all relative overflow-hidden flex flex-col">
-                <video 
+                <LazyVideo 
                   autoPlay muted loop playsInline 
+                  src="/videos/laser.mp4"
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none"
-                >
-                  <source src="/videos/laser.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black z-0" />
 
                 <div className="relative z-10 flex flex-col h-full">

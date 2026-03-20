@@ -51,11 +51,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-neutral-500 text-xs">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-neutral-400 text-xs">
           <p>© 2026 Adhara Clínica Spa. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Aviso de Privacidad</a>
-            <a href="#" className="hover:text-white transition-colors">Términos del Servicio</a>
+            <a href="#" className="text-neutral-400 hover:text-white transition-colors">Aviso de Privacidad</a>
+            <a href="#" className="text-neutral-400 hover:text-white transition-colors">Términos del Servicio</a>
           </div>
         </div>
       </div>

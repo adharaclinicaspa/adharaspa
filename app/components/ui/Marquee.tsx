@@ -19,6 +19,7 @@ export const Marquee = ({ children, className, speed = "40s" }: MarqueeProps) =>
         className="flex w-max shrink-0 animate-marquee items-center gap-6 pr-6" 
         aria-hidden="true"
         tabIndex={-1}
+        {...({ inert: "" } as any)}
         style={{ animationDuration: speed }}
       >
         {children}

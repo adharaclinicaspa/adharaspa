@@ -1,5 +1,6 @@
 import { BlurReveal } from "./ui/BlurReveal";
 import { ShineBorder } from "./ui/ShineBorder";
+import { LazyVideo } from "./ui/LazyVideo";
 
 export default function PaquetesSection() {
   const packages = [
@@ -82,16 +83,14 @@ export default function PaquetesSection() {
 function PackageCard({ pkg }: { pkg: any }) {
   return (
     <div className="group relative aspect-[14/9] rounded-[2.5rem] overflow-hidden glass-panel border border-white/10 flex flex-col justify-end p-8 md:p-10">
-      <video 
+      <LazyVideo 
         autoPlay 
         muted 
         loop 
         playsInline 
-        preload="none"
+        src={pkg.video}
         className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700"
-      >
-        <source src={pkg.video} type="video/mp4" />
-      </video>
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
       
       {pkg.highlight && (

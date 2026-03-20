@@ -34,11 +34,11 @@ export default function HeroSection() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-[90px] font-bold tracking-tighter text-white leading-none mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-[90px] font-bold tracking-tighter text-white leading-none mb-10 opacity-0 animate-[fade-in-up_0.8s_ease-out_forwards]">
             El cuidado que mereces<span className="text-[var(--color-brand-gold-text)]">.</span>
         </h1>
 
-        <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+        <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10 opacity-0 animate-[fade-in-up_0.8s_ease-out_forwards]">
             En Adhara Clínica Spa, creemos que el amor propio comienza con el cuidado de tu ser.
             Un momento de paz para ti, una transformación real para tu piel.
         </p>
