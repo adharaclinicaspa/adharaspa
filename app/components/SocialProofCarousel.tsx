@@ -89,11 +89,18 @@ export default function SocialProofCarousel() {
         <button onClick={prev} className="w-12 h-12 rounded-full glass-panel border border-white/10 text-white flex items-center justify-center hover:bg-white/5 transition-all text-xl">
           ←
         </button>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center h-4">
             {videos.map((_, i) => (
-                <div 
+                <motion.div 
                     key={i} 
-                    className={`h-1.5 rounded-full transition-all duration-500 ${i === index ? 'w-8 bg-[var(--color-brand-gold-text)]' : 'w-2 bg-white/20'}`} 
+                    layout
+                    initial={false}
+                    animate={{
+                        width: i === index ? 32 : 8,
+                        backgroundColor: i === index ? 'rgba(212, 175, 55, 1)' : 'rgba(255, 255, 255, 0.2)'
+                    }}
+                    transition={{ type: "spring", stiffness: 300, damping: 300 }}
+                    className="h-1.5 rounded-full"
                 />
             ))}
         </div>

@@ -61,23 +61,36 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Bottom Image Teaser (Optional Centered element) */}
-        <div className="mt-12 w-full max-w-5xl mx-auto opacity-0 animate-fade-in-up" style={{ animationDelay: '500ms' }}>
+        <div className="mt-12 w-full max-w-5xl mx-auto opacity-0 animate-[fade-in-up_0.8s_ease-out_500ms_forwards]">
           <ShineBorder borderRadius="3rem" className="w-full">
             <div className="relative aspect-video rounded-[3rem] overflow-hidden bg-neutral-900">
+               {/* LCP Image: Loads ultra fast and is the stable LCP element */}
+               <Image 
+                 src="/hero-poster.jpg" 
+                 alt="Adhara Clínica Spa Hero" 
+                 fill 
+                 priority
+                 sizes="(max-width: 768px) 100vw, 1200px"
+                 className="object-cover opacity-70"
+                 // @ts-ignore
+                 fetchPriority="high"
+               />
+               
                <video
                  autoPlay
                  muted
                  loop
                  playsInline
                  preload="auto"
-                 poster="/hero-poster.jpg"
-                 className="w-full h-full object-cover opacity-70"
+                 onCanPlay={(e) => (e.currentTarget.style.opacity = "0.7")}
+                 className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 z-10"
                >
                  <source src="/videos/hero-spa.mp4" type="video/mp4" />
                  <track kind="captions" label="Spanish" srcLang="es" />
                </video>
-               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-               <div className="absolute bottom-10 left-10 flex gap-4">
+               
+               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
+               <div className="absolute bottom-10 left-10 flex gap-4 z-30">
                  <div className="glass-pill px-6 py-2 flex items-center gap-2">
                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                    <span className="text-xs font-semibold text-white tracking-widest uppercase">Resultados Reales</span>
