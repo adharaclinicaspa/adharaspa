@@ -1,4 +1,6 @@
+"use client";
 import { cn } from "@/lib/utils";
+import { useEffect, useRef } from "react";
 
 interface MarqueeProps {
   children: React.ReactNode;
@@ -7,6 +9,15 @@ interface MarqueeProps {
 }
 
 export const Marquee = ({ children, className, speed = "40s" }: MarqueeProps) => {
+  const cloneRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (cloneRef.current) {
+      // Use setAttribute for maximum compatibility with emulated browsers / Lighthouse
+      cloneRef.current.setAttribute("inert", "");
+    }
+  }, []);
+
   return (
     <div className={cn("flex w-full overflow-hidden no-scrollbar", className)}>
       <div 
@@ -16,10 +27,9 @@ export const Marquee = ({ children, className, speed = "40s" }: MarqueeProps) =>
         {children}
       </div>
       <div 
-        className="flex w-max shrink-0 animate-marquee items-center gap-6 pr-6" 
+        ref={cloneRef}
+        className="flex w-max shrink-0 animate-marquee items-center gap-6 pr-6 pointer-events-none select-none" 
         aria-hidden="true"
-        tabIndex={-1}
-        {...({ inert: "" } as any)}
         style={{ animationDuration: speed }}
       >
         {children}
