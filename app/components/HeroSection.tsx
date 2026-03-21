@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowUpRight, Star } from "lucide-react";
 import { ShineBorder } from "./ui/ShineBorder"; // Added ShineBorder import
 import { cn } from "../../lib/utils";
+import { LazyVideo } from "./ui/LazyVideo";
 
 export default function HeroSection() {
   return (
@@ -76,18 +77,16 @@ export default function HeroSection() {
                  fetchPriority="high"
                />
                
-               <video
+               <LazyVideo
+                 src="/videos/hero-spa.mp4"
+                 poster="/hero-poster.jpg"
+                 priority={true}
                  autoPlay
                  muted
                  loop
                  playsInline
-                 preload="auto"
-                 onCanPlay={(e) => (e.currentTarget.style.opacity = "0.7")}
-                 className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 z-10"
-               >
-                 <source src="/videos/hero-spa.mp4" type="video/mp4" />
-                 <track kind="captions" label="Spanish" srcLang="es" />
-               </video>
+                 className="absolute inset-0 w-full h-full object-cover z-10 opacity-70"
+               />
                
                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
                <div className="absolute bottom-10 left-10 flex gap-4 z-30">
