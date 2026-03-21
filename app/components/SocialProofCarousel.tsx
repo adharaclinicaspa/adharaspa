@@ -5,8 +5,8 @@ import { User } from "lucide-react";
 import { LazyVideo } from "./ui/LazyVideo";
 
 const videos = [
-  { id: 1, video: "/videos/spa-videos.mp4", author: "@ana_skincare" },
-  { id: 2, video: "/videos/spa-1080p.mp4", author: "@adhara_clinica" },
+  { id: 1, video: "/videos/facial.mp4", author: "@ana_skincare" },
+  { id: 2, video: "/videos/spa-4k.mp4", author: "@adhara_clinica" },
   { id: 3, video: "/videos/spa-videos.mp4", author: "@mari_tips" },
   { id: 4, video: "/videos/spa-1080p.mp4", author: "@luxury_spa" },
   { id: 5, video: "/videos/relax.mp4", author: "@pao_beauty" },
@@ -54,12 +54,13 @@ export default function SocialProofCarousel() {
                 style={{ transformStyle: "preserve-3d" }}
               >
                 {isCenter ? (
-                  <LazyVideo
+                  <video
                     src={video.video}
                     autoPlay
                     muted
                     loop
                     playsInline
+                    preload="auto"
                     className="w-full h-full object-cover opacity-80"
                   />
                 ) : (

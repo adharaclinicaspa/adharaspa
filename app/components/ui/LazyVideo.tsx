@@ -12,7 +12,6 @@ interface LazyVideoProps extends React.VideoHTMLAttributes<HTMLVideoElement> {
 export function LazyVideo({ src, poster, priority = false, className, ...props }: LazyVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isInView, setIsInView] = useState(priority);
-  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     if (priority) {
@@ -27,7 +26,7 @@ export function LazyVideo({ src, poster, priority = false, className, ...props }
           observer.disconnect();
         }
       },
-      { rootMargin: "400px" } // Increased margin for smoother experience
+      { rootMargin: "600px" } // Use large margin to seamlessly lazy load
     );
 
     if (videoRef.current) {
@@ -37,30 +36,13 @@ export function LazyVideo({ src, poster, priority = false, className, ...props }
     return () => observer.disconnect();
   }, [priority]);
 
-  const handleLoaded = () => {
-    setIsLoaded(true);
-  };
-
+  // Removing intensive React state like onLoadedData/onPlaying and native hooks
+  // to avoid Main Thread Blocking Time (TBT) spikes.
   return (
     <div className={cn("relative overflow-hidden", className)}>
-      {/* Poster image that stays until video is playing */}
-      {poster && !isLoaded && (
-        <img
-          src={poster}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000"
-          aria-hidden="true"
-        />
-      )}
-      
       <video
         ref={videoRef}
-        className={cn(
-          "w-full h-full object-cover transition-opacity duration-1000 z-10",
-          isLoaded ? "opacity-100" : "opacity-0"
-        )}
-        onLoadedData={handleLoaded}
-        onPlaying={handleLoaded}
+        className={cn("w-full h-full object-cover z-10")}
         poster={poster}
         preload={priority ? "auto" : "none"}
         {...props}

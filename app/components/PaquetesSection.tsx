@@ -8,16 +8,14 @@ export default function PaquetesSection() {
       id: "faciales",
       title: "Experiencias Faciales",
       description: "Rituales personalizados enfocados en rejuvenecimiento, control de acné y efecto glow.",
-      video: "/videos/spa-videos.mp4", // Swapped 45MB facial.mp4 for 6MB spa-videos.mp4
-      poster: "/hero-poster.jpg",
+      video: "/videos/facial.mp4",
       highlight: false
     },
     {
       id: "micropigmentacion",
       title: "Micropigmentación",
       description: "Realce semipermanente artístico para cejas, labios y ojos con pigmentos de grado médico.",
-      video: "/videos/spa-videos.mp4", // Swapped 97MB micropigmentacion.mp4 for 6MB spa-videos.mp4
-      poster: "/hero-poster.jpg",
+      video: "/videos/micropigmentacion.mp4",
       highlight: true
     },
     {
@@ -25,7 +23,6 @@ export default function PaquetesSection() {
       title: "Protocolos Corporales",
       description: "Tecnología de última generación para moldear, reafirmar y mejorar la textura de la piel.",
       video: "/videos/spa-videos.mp4",
-      poster: "/hero-poster.jpg",
       highlight: false
     },
     {
@@ -33,7 +30,6 @@ export default function PaquetesSection() {
       title: "Depilación Láser",
       description: "Eliminación definitiva del vello con tecnología de enfriamiento para máximo confort.",
       video: "/videos/laser.mp4",
-      poster: "/hero-poster.jpg",
       highlight: false
     }
   ];
@@ -93,7 +89,6 @@ function PackageCard({ pkg }: { pkg: any }) {
         loop 
         playsInline 
         src={pkg.video}
-        poster={pkg.poster}
         className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-700"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />

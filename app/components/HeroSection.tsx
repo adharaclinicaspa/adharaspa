@@ -3,7 +3,6 @@ import Image from "next/image";
 import { ArrowUpRight, Star } from "lucide-react";
 import { ShineBorder } from "./ui/ShineBorder"; // Added ShineBorder import
 import { cn } from "../../lib/utils";
-import { LazyVideo } from "./ui/LazyVideo";
 
 export default function HeroSection() {
   return (
@@ -66,27 +65,29 @@ export default function HeroSection() {
           <ShineBorder borderRadius="3rem" className="w-full">
             <div className="relative aspect-video rounded-[3rem] overflow-hidden bg-neutral-900">
                {/* LCP Image: Loads ultra fast and is the stable LCP element */}
-               <Image 
-                 src="/hero-poster.jpg" 
-                 alt="Adhara Clínica Spa Hero" 
-                 fill 
-                 priority
-                 sizes="(max-width: 768px) 100vw, 1200px"
-                 className="object-cover opacity-70"
-                 // @ts-ignore
-                 fetchPriority="high"
-               />
-               
-               <LazyVideo
-                 src="/videos/hero-spa.mp4"
-                 poster="/hero-poster.jpg"
-                 priority={true}
-                 autoPlay
-                 muted
-                 loop
-                 playsInline
-                 className="absolute inset-0 w-full h-full object-cover z-10 opacity-70"
-               />
+               <div className="absolute inset-0 w-full h-full opacity-70 z-10">
+                 <Image 
+                   src="/hero-poster.jpg" 
+                   alt="Adhara Clínica Spa Hero" 
+                   fill 
+                   priority
+                   sizes="(max-width: 768px) 100vw, 1200px"
+                   className="object-cover"
+                   // @ts-ignore
+                   fetchPriority="high"
+                 />
+                 
+                 <video
+                   src="/videos/hero-spa.mp4"
+                   poster="/hero-poster.jpg"
+                   autoPlay
+                   muted
+                   loop
+                   playsInline
+                   preload="auto"
+                   className="absolute inset-0 w-full h-full object-cover z-10"
+                 />
+               </div>
                
                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
                <div className="absolute bottom-10 left-10 flex gap-4 z-30">
