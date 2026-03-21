@@ -61,7 +61,7 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Bottom Image Teaser (Optional Centered element) */}
-        <div className="mt-12 w-full max-w-5xl mx-auto opacity-0 animate-[fade-in-up_0.8s_ease-out_500ms_forwards]">
+        <div className="mt-12 w-full max-w-5xl mx-auto opacity-0 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
           <ShineBorder borderRadius="3rem" className="w-full">
             <div className="relative aspect-video rounded-[3rem] overflow-hidden bg-neutral-900">
                {/* LCP Image: Loads ultra fast and is the stable LCP element */}
