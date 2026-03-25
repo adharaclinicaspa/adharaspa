@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li><a href="/#faq" className="text-neutral-400 hover:text-white text-sm transition-colors">Preguntas Frecuentes</a></li>
               <li><a href="#reservar" className="text-neutral-400 hover:text-white text-sm transition-colors">Agendar Valoración</a></li>
-              <li><a href="tel:+525612979701" className="text-neutral-400 hover:text-white text-sm transition-colors">Llamar a Clínica</a></li>
+              <li><a href="https://wa.me/525525647074" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white text-sm transition-colors">Llamar a Clínica</a></li>
               <li>
                 <span className="text-neutral-400 text-sm block mt-2">
                   Ubicación:<br/>Lindavista, Zona de Hospitales<br/>CDMX, México.
