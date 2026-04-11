@@ -15,13 +15,15 @@ export default function Footer() {
                 Adhara
               </span>
             </Link>
-            <p className="text-neutral-400 text-sm max-w-sm leading-relaxed mb-8">
-              Clínica estética de lujo en CDMX. Protocolos faciales y corporales diseñados para potenciar tus resultados de forma segura y personalizada.
-            </p>
-            <div className="flex items-center gap-4">
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">Instagram</a>
+            <div className="space-y-4 max-w-sm">
+              <p className="text-[#BFB7AA] text-sm leading-relaxed">
+                Clínica Spa especializada en resaltar tu belleza natural con tratamientos estéticos, faciales y corporales de alta gama y tecnología de vanguardia.
+              </p>
+            </div>
+            <div className="flex items-center gap-4 mt-8">
+              <a href="https://instagram.com/adharaclinicaspa" target="_blank" className="text-[#BFB7AA] hover:text-[var(--color-brand-gold-text)] transition-colors text-sm">Instagram</a>
               <span className="text-neutral-800">|</span>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">Facebook</a>
+              <a href="#" className="text-[#BFB7AA] hover:text-[var(--color-brand-gold-text)] transition-colors text-sm">Facebook</a>
             </div>
           </div>
 
@@ -29,9 +31,9 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-2">
             <h3 className="text-white font-semibold mb-6">Explora</h3>
             <ul className="flex flex-col gap-4">
-              <li><Link href="/tratamientos" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Tratamientos</Link></li>
+              <li><Link href="/tratamientos" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] text-sm transition-colors">Tratamientos</Link></li>
               <li><Link href="/#resultados" className="text-neutral-400 hover:text-white text-sm transition-colors">Resultados</Link></li>
-              <li><Link href="/experiencia" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] transition-colors">Experiencia Adhara</Link></li>
+              <li><Link href="/experiencia" className="text-neutral-400 hover:text-[var(--color-brand-gold-text)] text-sm transition-colors">Experiencia Adhara</Link></li>
               <li><Link href="/nosotros" className="text-neutral-400 hover:text-white text-sm transition-colors">Nosotros</Link></li>
             </ul>
           </div>
@@ -44,7 +46,7 @@ export default function Footer() {
               <li><a href="https://wa.me/525525647074" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white text-sm transition-colors">Llamar a Clínica</a></li>
               <li>
                 <span className="text-neutral-400 text-sm block mt-2">
-                  Ubicación:<br/>Lindavista, Zona de Hospitales<br/>CDMX, México.
+                  Ubicación:<br/>Calle Norte 1B 5136<br/>Col. Maximino Ávila Camacho GAM
                 </span>
               </li>
             </ul>

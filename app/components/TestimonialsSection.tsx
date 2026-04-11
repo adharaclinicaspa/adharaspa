@@ -45,11 +45,11 @@ export default function TestimonialsSection() {
         <div className="flex flex-col md:flex-row justify-between items-end gap-10">
           <BlurReveal>
             <div className="max-w-2xl">
-              <span className="inline-block mb-3 text-[var(--color-brand-gold-text)] font-semibold tracking-wider text-sm uppercase">
+              <span className="inline-block mb-3 text-[var(--color-brand-gold-text)] font-semibold tracking-wider text-xs uppercase">
                 Lo Que Dicen Nuestros Pacientes
               </span>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.1]">
-                No lo decimos nosotros. Escucha a quienes ya tuvieron su experiencia <span className="text-[var(--color-brand-gold-text)] font-normal" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>.
+                No lo decimos nosotros. Escucha a quienes ya tuvieron su experiencia <span className="text-gold-gradient italic inline-block pr-6 pb-2 font-normal text-6xl md:text-7xl" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>
               </h2>
             </div>
           </BlurReveal>
@@ -65,13 +65,13 @@ export default function TestimonialsSection() {
         
         <Marquee speed="40s">
           {testimonials.map((t, i) => (
-            <div key={i} className="glass-panel w-[350px] md:w-[400px] p-8 rounded-3xl border border-white/5 hover:border-white/10 transition-colors">
+            <div key={i} className="glass-panel w-[350px] md:w-[400px] p-8 rounded-3xl border border-[var(--color-brand-gold-text)]/20 hover:border-[var(--color-brand-gold-text)]/40 transition-all duration-500">
               <div className="flex items-center gap-1 mb-6">
                 {[1, 2, 3, 4, 5].map((s) => (
-                  <Star key={s} size={16} className="text-[var(--color-brand-gold-text)] fill-[var(--color-brand-gold-text)]" />
+                  <Star key={s} size={16} className="text-[var(--color-brand-gold-text)] fill-[var(--color-brand-gold-text)] drop-shadow-[0_0_8px_rgba(198,162,90,0.5)]" />
                 ))}
               </div>
-              <p className="text-white text-lg font-medium leading-relaxed mb-8">"{t.text}"</p>
+              <p className="text-[#F4F1EA] text-lg font-medium leading-relaxed mb-8">"{t.text}"</p>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center font-bold text-sm text-neutral-300 relative overflow-hidden">
                   {t.image ? (

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { User } from "lucide-react";
+import { User, ChevronLeft, ChevronRight } from "lucide-react";
 import { LazyVideo } from "./ui/LazyVideo";
 
 const videos = [
@@ -26,7 +26,26 @@ export default function SocialProofCarousel() {
   }, [index]);
 
   return (
-    <div className="relative w-full h-[600px] flex flex-col items-center justify-center overflow-hidden py-10">
+    <div className="relative w-full h-[650px] flex flex-col items-center justify-center overflow-visible py-10">
+      
+      {/* Navigation Arrows Desktop */}
+      <div className="hidden md:flex absolute inset-x-0 top-1/2 -translate-y-1/2 justify-between px-4 md:px-10 lg:px-20 z-50 pointer-events-none">
+        <button 
+          onClick={prev} 
+          className="w-16 h-16 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-all pointer-events-auto backdrop-blur-md shadow-2xl group/btn"
+          aria-label="Anterior"
+        >
+          <ChevronLeft size={36} strokeWidth={2.5} className="group-hover/btn:-translate-x-1 transition-transform" />
+        </button>
+        <button 
+          onClick={next} 
+          className="w-16 h-16 rounded-full bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-all pointer-events-auto backdrop-blur-md shadow-2xl group/btn"
+          aria-label="Siguiente"
+        >
+          <ChevronRight size={36} strokeWidth={2.5} className="group-hover/btn:translate-x-1 transition-transform" />
+        </button>
+      </div>
+
       <div className="relative w-full max-w-5xl h-full flex items-center justify-center perspective-[1000px]">
         <AnimatePresence initial={false}>
           {videos.map((video, i) => {
@@ -49,7 +68,7 @@ export default function SocialProofCarousel() {
                   z: isCenter ? 0 : -200,
                 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute w-64 md:w-80 aspect-[9/16] rounded-3xl overflow-hidden glass-panel border border-white/10 cursor-pointer shadow-2xl"
+                className="absolute w-64 md:w-80 aspect-[9/16] rounded-3xl overflow-hidden glass-panel border border-[#010101]/10 cursor-pointer shadow-2xl"
                 onClick={isCenter ? undefined : isLeft ? prev : next}
                 style={{ transformStyle: "preserve-3d" }}
               >
@@ -61,22 +80,22 @@ export default function SocialProofCarousel() {
                     loop
                     playsInline
                     preload="auto"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-full bg-neutral-900 flex items-center justify-center">
-                    <User size={48} className="text-white/10" />
+                  <div className="w-full h-full bg-[#010101]/10 flex items-center justify-center">
+                    <User size={48} className="text-[#010101]/10" />
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
                 <div className="absolute bottom-8 left-8 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gold-shimmer flex items-center justify-center text-black border border-white/20">
+                  <div className="w-10 h-10 rounded-full bg-[#010101] flex items-center justify-center text-[var(--gold-brilliant-mid)] border border-white/10">
                     <User size={18} />
                   </div>
                   <div>
                     <span className="text-white font-bold text-sm block">{video.author}</span>
-                    <span className="text-neutral-400 text-[10px] uppercase tracking-widest">Experiencia Adhara</span>
+                    <span className="text-white/60 text-[10px] uppercase tracking-widest">Experiencia Adhara</span>
                   </div>
                 </div>
               </motion.div>
@@ -85,29 +104,21 @@ export default function SocialProofCarousel() {
         </AnimatePresence>
       </div>
       
-      {/* Controls */}
-      <div className="mt-12 flex gap-6">
-        <button onClick={prev} className="w-12 h-12 rounded-full glass-panel border border-white/10 text-white flex items-center justify-center hover:bg-white/5 transition-all text-xl">
-          ←
-        </button>
-        <div className="flex gap-2 items-center h-4">
-            {videos.map((_, i) => (
-                <motion.div 
-                    key={i} 
-                    layout
-                    initial={false}
-                    animate={{
-                        width: i === index ? 32 : 8,
-                        backgroundColor: i === index ? 'rgba(212, 175, 55, 1)' : 'rgba(255, 255, 255, 0.2)'
-                    }}
-                    transition={{ type: "spring", stiffness: 300, damping: 300 }}
-                    className="h-1.5 rounded-full"
-                />
-            ))}
-        </div>
-        <button onClick={next} className="w-12 h-12 rounded-full glass-panel border border-white/10 text-white flex items-center justify-center hover:bg-white/5 transition-all text-xl">
-          →
-        </button>
+      {/* Pagination indicators only at the bottom */}
+      <div className="mt-32 pt-8 flex gap-3 items-center h-4 z-40 relative">
+          {videos.map((_, i) => (
+              <motion.div 
+                  key={i} 
+                  layout
+                  initial={false}
+                  animate={{
+                      width: i === index ? 32 : 8,
+                      backgroundColor: i === index ? 'var(--color-brand-gold-text)' : 'rgba(255, 255, 255, 0.2)'
+                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 300 }}
+                  className="h-1.5 rounded-full"
+              />
+          ))}
       </div>
     </div>
   );

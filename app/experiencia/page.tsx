@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import { Star, ShieldCheck, Heart, Sparkles } from "lucide-react";
+import { Star, ShieldCheck, Heart, Sparkles, Zap, Droplet } from "lucide-react";
 
 import { CosmicParticles } from "../components/ui/CosmicParticles";
 
@@ -55,32 +55,53 @@ export default function ExperienciaPage() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                 ¿Por qué elegir <br/><span className="text-[var(--color-brand-gold-text)]">Adhara Clínica Spa?</span>
               </h2>
-              <div className="space-y-12">
-                <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                    <Star className="text-[var(--color-brand-gold-text)] w-6 h-6" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <Heart className="text-[var(--color-brand-gold-text)] w-5 h-5" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Exclusividad Premium</h3>
-                    <p className="text-neutral-400">Ambientes diseñados para desconectar del exterior y reconectar contigo en un espacio de total privacidad y confort.</p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                    <ShieldCheck className="text-[var(--color-brand-gold-text)] w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Ciencia y Resultados</h3>
-                    <p className="text-neutral-400">Aparatología de última generación y protocolos de clínica estética certificados para garantizar cambios visibles desde la primera sesión.</p>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Atención personalizada</h3>
                   </div>
                 </div>
-                <div className="flex gap-6">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                    <Heart className="text-[var(--color-brand-gold-text)] w-6 h-6" />
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <Zap className="text-[var(--color-brand-gold-text)] w-5 h-5" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Trato Humano</h3>
-                    <p className="text-neutral-400">Para nosotros no eres un paciente más. Eres una historia de belleza que merece ser escuchada y potenciada con cariño.</p>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Tecnología especializada</h3>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <ShieldCheck className="text-[var(--color-brand-gold-text)] w-5 h-5" />
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Protocolos profesionales</h3>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <Sparkles className="text-[var(--color-brand-gold-text)] w-5 h-5" />
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Resultados visibles</h3>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <Star className="text-[var(--color-brand-gold-text)] w-5 h-5" />
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Ambiente cómodo y seguro</h3>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                    <Droplet className="text-[var(--color-brand-gold-text)] w-5 h-5" />
+                  </div>
+                  <div className="flex items-center">
+                    <h3 className="text-xl font-medium text-white">Tratamientos adaptados a cada tipo de piel</h3>
                   </div>
                 </div>
               </div>

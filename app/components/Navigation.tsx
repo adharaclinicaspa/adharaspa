@@ -62,7 +62,7 @@ export default function Navigation() {
               href="#reservar"
               className="px-5 py-2.5 rounded-full btn-gold text-sm font-semibold text-black"
             >
-              Reservar Cita
+              Agendar cita
             </a>
           </div>
 
@@ -100,7 +100,7 @@ export default function Navigation() {
             className="w-full text-center px-6 py-3 rounded-full btn-gold text-sm mt-4 text-black font-semibold" 
             onClick={() => setMenuOpen(false)}
           >
-            Probar experiencia
+            Agendar cita
           </a>
         </div>
       </div>

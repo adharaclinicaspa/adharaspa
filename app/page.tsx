@@ -21,11 +21,11 @@ export default function Home() {
         <StarServicesSlider />
         <IntroSection />
       
-      <section id="resultados" className="py-24 bg-black overflow-hidden">
-        <div className="container-brand px-6 md:px-10 mx-auto text-center mb-16">
-          <span className="text-[var(--color-brand-gold-text)] font-semibold tracking-widest text-xs uppercase mb-4 block">Resultados Adhara</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Voces de Belleza Real</h2>
-          <p className="text-neutral-400 text-lg max-w-2xl mx-auto">Mira lo que nuestra comunidad dice sobre su experiencia de transformación en Adhara.</p>
+      <section id="resultados" className="py-32 bg-gradient-to-b from-[#A68037] to-black overflow-hidden relative">
+        <div className="container-brand px-6 md:px-10 mx-auto text-center mb-16 relative z-10">
+          <span className="text-white font-extrabold tracking-[0.3em] text-xs uppercase mb-6 block">Resultados Adhara</span>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tighter drop-shadow-sm">Voces de Belleza Real</h2>
+          <p className="text-white/80 text-lg md:text-xl font-medium max-w-3xl mx-auto leading-tight">Mira lo que nuestra comunidad dice sobre su<br/>experiencia de transformación en Adhara.</p>
         </div>
         <SocialProofCarousel />
       </section>

@@ -18,14 +18,14 @@ export const WhatsAppButton = () => {
       {/* Container for button and pulsar to ensure perfect alignment */}
       <div className="relative flex items-center justify-center">
         {/* Ripple effect animation - strictly centered behind the button */}
-        <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-40 animate-ping -z-10" />
+        <div className="absolute inset-0 rounded-full bg-[#FFD700] opacity-50 animate-ping -z-10" />
         
-        {/* Green Circle Button */}
+        {/* Solid Gold Circle Button */}
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_30px_rgba(37,211,102,0.6)] hover:scale-110 transition-all duration-300 group-active:scale-95 border-2 border-white/20 z-10 p-0 overflow-hidden"
+          className="flex items-center justify-center w-16 h-16 bg-[#D4AF37] rounded-full shadow-[0_15px_35px_rgba(212,175,55,0.6)] hover:shadow-[0_20px_45px_rgba(212,175,55,0.8)] hover:scale-110 transition-all duration-300 group-active:scale-95 border-2 border-white/40 z-10 p-0 overflow-hidden"
           aria-label="Contactar por WhatsApp"
         >
           <div className="relative w-full h-full flex items-center justify-center">
@@ -34,7 +34,8 @@ export const WhatsAppButton = () => {
                alt="WhatsApp" 
                width={40} 
                height={40} 
-               className="w-10 h-10 object-contain"
+               className="w-10 h-10 object-contain brightness-0"
+               style={{ filter: 'brightness(0)' }}
              />
           </div>
         </a>

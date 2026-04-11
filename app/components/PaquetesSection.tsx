@@ -7,29 +7,43 @@ export default function PaquetesSection() {
     {
       id: "faciales",
       title: "Experiencias Faciales",
-      description: "Rituales personalizados enfocados en rejuvenecimiento, control de acné y efecto glow.",
+      description: "Tratamientos personalizados para limpiar, nutrir y rejuvenecer tu piel con resultados visibles.",
       video: "/videos/facial.mp4",
       highlight: false
     },
     {
       id: "micropigmentacion",
       title: "Micropigmentación",
-      description: "Realce semipermanente artístico para cejas, labios y ojos con pigmentos de grado médico.",
+      description: "Realce semipermanente natural para cejas, labios y ojos con diseño artístico personalizado.",
       video: "/videos/micropigmentacion.mp4",
       highlight: true
     },
     {
       id: "corporales",
       title: "Protocolos Corporales",
-      description: "Tecnología de última generación para moldear, reafirmar y mejorar la textura de la piel.",
+      description: "Moldea y redefine tu figura sin cirugía con tecnología de remodelación avanzada.",
       video: "/videos/spa-videos.mp4",
       highlight: false
     },
     {
       id: "depilacion",
       title: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología de enfriamiento para máximo confort.",
+      description: "Olvídate del vello y disfruta una piel suave con tecnología segura y resultados duraderos.",
       video: "/videos/laser.mp4",
+      highlight: false
+    },
+    {
+      id: "hollywood-peel",
+      title: "Hollywood Peel",
+      description: "El tratamiento favorito de las celebridades para una piel luminosa.",
+      video: "/videos/peeling.mp4",
+      highlight: false
+    },
+    {
+      id: "bb-glow",
+      title: "BB Glow",
+      description: "Efecto piel de porcelana con apariencia uniforme y luminosa.",
+      video: "/videos/bb-glow.mp4",
       highlight: false
     }
   ];
@@ -41,16 +55,16 @@ export default function PaquetesSection() {
         <div className="text-center mb-20">
           <BlurReveal>
             <span className="inline-block mb-4 text-[var(--color-brand-gold-text)] font-semibold tracking-widest text-xs uppercase">
-              Resultados que evolucionan contigo
+              Una experiencia única
             </span>
           </BlurReveal>
           <BlurReveal delay={0.1}>
             <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-none">
-              Paquetes Exclusivos <span className="text-[var(--color-brand-gold-text)]" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>
+              Paquetes Exclusivos <span className="text-gold-gradient italic inline-block pr-6 pb-2 font-normal" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>
             </h2>
           </BlurReveal>
           <BlurReveal delay={0.2}>
-            <p className="text-neutral-400 text-lg mt-6 max-w-2xl mx-auto">
+            <p className="text-[#BFB7AA] text-lg mt-6 max-w-2xl mx-auto">
               Diseñados para potenciar resultados de forma progresiva, segura y personalizada.
             </p>
           </BlurReveal>

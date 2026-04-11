@@ -11,7 +11,8 @@ export default function HeroSection() {
       className="relative min-h-[100svh] flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden text-center"
     >
       {/* Background glow effects */}
-      <div className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[60%] h-[50%] bg-[var(--color-brand-gold-text)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-[5%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] bg-[var(--color-brand-gold-text)] opacity-[0.05] rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-[20%] left-1/3 -translate-x-1/2 w-[40%] h-[30%] bg-[#E3C98B] opacity-[0.03] rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-white opacity-[0.02] rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container-brand px-6 md:px-10 mx-auto w-full max-w-5xl z-10 flex flex-col items-center">
@@ -34,13 +35,15 @@ export default function HeroSection() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-[90px] font-bold tracking-tighter text-white leading-none mb-10">
-            El cuidado que mereces<span className="text-[var(--color-brand-gold-text)]">.</span>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-gold-gradient leading-tight mb-10 pb-4 flex flex-wrap items-center justify-center gap-x-4">
+            <span>Bienvenida a</span> 
+            <span className="font-normal inline-block pr-8 pb-4 -mb-4 text-6xl md:text-7xl lg:text-8xl xl:text-[90px]" style={{ fontFamily: "'Pinyon Script', cursive" }}>Adhara</span>
         </h1>
 
-        <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
-            En Adhara Clínica Spa, creemos que el amor propio comienza con el cuidado de tu ser.
-            Un momento de paz para ti, una transformación real para tu piel.
+        <p className="text-[#BFB7AA] text-lg md:text-xl max-w-3xl leading-relaxed mb-10">
+            En Adhara Clínica Spa nos especializamos en el cuidado integral de la piel y el bienestar, 
+            combinando tecnología avanzada con experiencia profesional para ofrecer tratamientos faciales, 
+            corporales y estéticos de alta calidad.
         </p>
 
         {/* CTAs */}
@@ -92,7 +95,7 @@ export default function HeroSection() {
                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-20" />
                <div className="absolute bottom-10 left-10 flex gap-4 z-30">
                  <div className="glass-pill px-6 py-2 flex items-center gap-2">
-                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                   <div className="w-2 h-2 rounded-full bg-[var(--color-brand-gold-text)] animate-pulse" />
                    <span className="text-xs font-semibold text-white tracking-widest uppercase">Resultados Reales</span>
                  </div>
                </div>
