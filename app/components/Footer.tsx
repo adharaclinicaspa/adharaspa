@@ -17,7 +17,7 @@ export default function Footer() {
             </Link>
             <div className="space-y-4 max-w-sm">
               <p className="text-[#BFB7AA] text-sm leading-relaxed">
-                Clínica Spa especializada en resaltar tu belleza natural con tratamientos estéticos, faciales y corporales de alta gama y tecnología de vanguardia.
+                Clinic Spa especializada en resaltar tu belleza natural con tratamientos estéticos, faciales y corporales de alta gama y tecnología de vanguardia.
               </p>
             </div>
             <div className="flex items-center gap-4 mt-8">
@@ -43,10 +43,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li><a href="/#faq" className="text-neutral-400 hover:text-white text-sm transition-colors">Preguntas Frecuentes</a></li>
               <li><a href="#reservar" className="text-neutral-400 hover:text-white text-sm transition-colors">Agendar Valoración</a></li>
-              <li><a href="https://wa.me/525525647074" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white text-sm transition-colors">Llamar a Clínica</a></li>
+              <li><a href="https://wa.me/525525647074" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white text-sm transition-colors">Llamar a Clinic</a></li>
               <li>
                 <span className="text-neutral-400 text-sm block mt-2">
-                  Ubicación:<br/>Calle Norte 1B 5136<br/>Col. Maximino Ávila Camacho GAM
+                  Ubicación:<br/>Pernambuco 889<br/>Lindavista Norte
                 </span>
               </li>
             </ul>
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-neutral-400 text-xs">
-          <p>© 2026 Adhara Clínica Spa. Todos los derechos reservados.</p>
+          <p>© 2026 Adhara Clinic Spa. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6 mt-4 md:mt-0">
             <a href="#" className="text-neutral-400 hover:text-white transition-colors">Aviso de Privacidad</a>
             <a href="#" className="text-neutral-400 hover:text-white transition-colors">Términos del Servicio</a>

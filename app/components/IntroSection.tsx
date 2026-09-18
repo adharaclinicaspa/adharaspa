@@ -67,7 +67,7 @@ export default function IntroSection() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 tracking-wider uppercase text-sm">Visión</h3>
               <p className="text-[#BFB7AA] leading-relaxed">
-                Ser una clínica spa reconocida por la calidad de nuestros tratamientos, la innovación en tecnología estética y la excelencia en el servicio, destacando por resultados visibles y la satisfacción de nuestros pacientes.
+                Ser una Clinic spa reconocida por la calidad de nuestros tratamientos, la innovación en tecnología estética y la excelencia en el servicio, destacando por resultados visibles y la satisfacción de nuestros pacientes.
               </p>
             </div>
           </BlurReveal>

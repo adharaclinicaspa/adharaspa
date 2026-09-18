@@ -95,7 +95,7 @@ export default function TratamientosPage() {
               Nuestros <span className="text-gold-gradient">Tratamientos</span>
             </h1>
             <p className="text-[#BFB7AA] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              En Adhara Clínica Spa combinamos aparatología de alta gama, ingredientes premium 
+              En Adhara Clinic Spa combinamos aparatología de alta gama, ingredientes premium 
               y maniobras precisas para ofrecerte resultados seguros, visibles y duraderos.
             </p>
           </div>
@@ -353,7 +353,7 @@ export default function TratamientosPage() {
               <h3 className="text-2xl font-bold text-white mb-6">¿Por qué elegir nuestros programas?</h3>
               <p className="text-xl text-neutral-300 italic max-w-2xl mx-auto leading-relaxed">
                 "Inversión deliberada en tu confianza. Cada sesión potencia la anterior. 
-                En Adhara Clínica Spa, trabajamos para ver resultados reales que evolucionan contigo."
+                En Adhara Clinic Spa, trabajamos para ver resultados reales que evolucionan contigo."
               </p>
             </div>
           </div>

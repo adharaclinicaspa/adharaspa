@@ -8,28 +8,28 @@ import { WhatsAppButton } from "./components/ui/WhatsAppButton";
 export const metadata: Metadata = {
   metadataBase: new URL('https://adharaspa.com'),
   title: {
-    default: "Adhara Clínica Spa | Micropigmentación de Lujo y Skin Clinic en CDMX",
-    template: "%s | Adhara Clínica Spa"
+    default: "Adhara Clinic Spa | Micropigmentación de Lujo y Skin Clinic en CDMX",
+    template: "%s | Adhara Clinic Spa"
   },
   description:
     "Especialistas en Micropigmentación avanzada, faciales clínicos y protocolos de alta gama con tecnología de vanguardia. Resultados reales para tu belleza natural en CDMX.",
   keywords: [
-    "micropigmentación CDMX", "clínica Lindavista", "tratamientos faciales de lujo México",
+    "micropigmentación CDMX", "Clinic Lindavista", "tratamientos faciales de lujo México",
     "depilación láser profesional", "spa de lujo CDMX", "cejas powder brows México",
-    "rejuvenecimiento facial avanzado", "Skin Clinic CDMX", "Adhara Clínica Spa"
+    "rejuvenecimiento facial avanzado", "Skin Clinic CDMX", "Adhara Clinic Spa"
   ],
   openGraph: {
-    title: "Adhara Clínica Spa | Micropigmentación y Skin Clinic de Lujo",
+    title: "Adhara Clinic Spa | Micropigmentación y Skin Clinic de Lujo",
     description:
       "Descubre el arte del cuidado consciente. Micropigmentación, faciales y tecnología de alta gama en Ciudad de México.",
     url: "https://adharaspa.com",
-    siteName: "Adhara Clínica Spa",
+    siteName: "Adhara Clinic Spa",
     images: [
       {
         url: "/adhara-og.jpeg",
         width: 1200,
         height: 630,
-        alt: "Adhara Clínica Spa - El Arte del Cuidado Consciente",
+        alt: "Adhara Clinic Spa - El Arte del Cuidado Consciente",
       },
     ],
     locale: "es_MX",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adhara Clínica Spa | Belleza que Evoluciona",
+    title: "Adhara Clinic Spa | Belleza que Evoluciona",
     description: "Tratamientos de alta gama y micropigmentación profesional en Lindavista, CDMX.",
     images: ["/adhara-og.jpeg"],
   },
@@ -88,16 +88,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Adhara Clínica Spa",
+              name: "Adhara Clinic Spa",
               description:
-                "Clínica especializada en micropigmentación avanzada, tratamientos faciales clínicos y corporales de alta gama.",
+                "Clinic especializada en micropigmentación avanzada, tratamientos faciales clínicos y corporales de alta gama.",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Lindavista",
+                streetAddress: "Pernambuco 889",
+                addressLocality: "Lindavista Norte",
                 addressRegion: "Ciudad de México",
                 addressCountry: "MX",
               },
-              telephone: "+525612979701",
+              telephone: "+525525647074",
               priceRange: "$$$",
             }),
           }}

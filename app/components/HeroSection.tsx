@@ -41,7 +41,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-[#BFB7AA] text-lg md:text-xl max-w-3xl leading-relaxed mb-10">
-            En Adhara Clínica Spa nos especializamos en el cuidado integral de la piel y el bienestar, 
+            En Adhara Clinic Spa nos especializamos en el cuidado integral de la piel y el bienestar, 
             combinando tecnología avanzada con experiencia profesional para ofrecer tratamientos faciales, 
             corporales y estéticos de alta calidad.
         </p>
@@ -71,7 +71,7 @@ export default function HeroSection() {
                <div className="absolute inset-0 w-full h-full opacity-70 z-10">
                  <Image 
                    src="/hero-poster.jpg" 
-                   alt="Adhara Clínica Spa Hero" 
+                   alt="Adhara Clinic Spa Hero" 
                    fill 
                    priority
                    sizes="(max-width: 768px) 100vw, 1200px"

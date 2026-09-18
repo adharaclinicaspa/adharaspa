@@ -41,7 +41,7 @@ export default function ExperienciaPage() {
                 </span>
               </h1>
               <p className="text-neutral-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-                En Adhara Clínica Spa, no solo realizamos tratamientos. Creamos rituales de transformación 
+                En Adhara Clinic Spa, no solo realizamos tratamientos. Creamos rituales de transformación 
                 donde la ciencia avanzada y el lujo se encuentran.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function ExperienciaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-                ¿Por qué elegir <br/><span className="text-[var(--color-brand-gold-text)]">Adhara Clínica Spa?</span>
+                ¿Por qué elegir <br/><span className="text-[var(--color-brand-gold-text)]">Adhara Clinic Spa?</span>
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex gap-4">
