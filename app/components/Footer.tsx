@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex items-center gap-4 mt-8">
-              <a href="https://instagram.com/adharaclinicaspa" target="_blank" className="text-[#BFB7AA] hover:text-[var(--color-brand-gold-text)] transition-colors text-sm">Instagram</a>
+              <a href="https://www.instagram.com/adharaclinicspa" target="_blank" className="text-[#BFB7AA] hover:text-[var(--color-brand-gold-text)] transition-colors text-sm">Instagram</a>
               <span className="text-neutral-800">|</span>
               <a href="#" className="text-[#BFB7AA] hover:text-[var(--color-brand-gold-text)] transition-colors text-sm">Facebook</a>
             </div>
