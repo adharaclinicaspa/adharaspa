@@ -198,7 +198,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Manejamos promociones del mes y planes por sesión.</p>
                   </div>
-                   <a href="https://wa.me/525525647074" target="_blank" className="btn-gold inline-flex w-full justify-center px-6 py-3 rounded-full text-black font-semibold text-sm">
+                   <a href="https://wa.me/525660282952" target="_blank" className="btn-gold inline-flex w-full justify-center px-6 py-3 rounded-full text-black font-semibold text-sm">
                     Solicitar Información
                   </a>
                 </div>
@@ -227,7 +227,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Diseñamos el protocolo ideal para tus necesidades.</p>
                   </div>
-                  <a href="https://wa.me/525525647074" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
+                  <a href="https://wa.me/525660282952" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black transition-colors">
                     Solicitar Información
                   </a>
                 </div>
@@ -258,7 +258,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Diseño personalizado que armoniza con tu rostro.</p>
                   </div>
-                  <a href="https://wa.me/525525647074" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                  <a href="https://wa.me/525660282952" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
                     Solicitar Información
                   </a>
                 </div>
@@ -286,7 +286,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Precios preferenciales en cuerpo completo o zonas combinadas.</p>
                   </div>
-                  <a href="https://wa.me/525525647074" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                  <a href="https://wa.me/525660282952" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
                     Solicitar Información
                   </a>
                 </div>
@@ -314,7 +314,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Obtén nuestro exclusivo tratamiento láser regenerador.</p>
                   </div>
-                  <a href="https://wa.me/525525647074" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                  <a href="https://wa.me/525660282952" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
                     Solicitar Información
                   </a>
                 </div>
@@ -342,7 +342,7 @@ export default function TratamientosPage() {
                     <p className="text-white text-lg font-bold mb-1">Comunícate para cotizar</p>
                     <p className="text-neutral-500 text-xs text-balance">Consulta por promociones y más información por WhatsApp.</p>
                   </div>
-                   <a href="https://wa.me/525525647074" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
+                   <a href="https://wa.me/525660282952" target="_blank" className="btn-outline inline-flex w-full justify-center px-6 py-3 rounded-full text-white font-semibold text-sm hover:bg-[var(--color-brand-gold-text)] hover:text-black hover:border-transparent transition-all">
                     Solicitar Información
                   </a>
                 </div>
