@@ -98,7 +98,7 @@ export default function RootLayout({
                 addressRegion: "Ciudad de México",
                 addressCountry: "MX",
               },
-              telephone: "+525525647074",
+              telephone: "+525660282952",
               priceRange: "$$$",
             }),
           }}
